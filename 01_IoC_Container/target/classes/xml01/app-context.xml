@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 
+		안녕. 난 Spring Bean Configuration File이야.
+		난 Ioc Container(스프링 컨테어너)에 Bean을 만들어 두는 파일이지.
+		내가 <Bean> 태그를 사용하면 Bean이 만들어져서 보관되.
+ 	-->
+
+	 <!--
+	 	default constructor + setter
+	 	<property name="stuNo"> 	 태그는 setStuNo() 	  메소드를 이용한다.
+	 	<property name="name">  	 태그는 setName() 		  메소드를 이용한다.
+	 	<property name="calculator"> 태그는 setCalculator() 메소드를 이용한다.
+	   -->
+	   
+	<!-- 객체 이름이 아이디.
+	 	Student student = new Student();
+	 	student.setCalculator(calc);
+	 	student.setStuNo("10101");
+	 	student.setName("강나래"); 
+	 -->
+	 
+	<!-- Calculator calc = new Calculator();  -->
+	<!-- bean = 객체, 지금 bean이 2개 있음 -->
+	<bean id="calc" class="com.gdu.app01.xml01.Calculator" />
+	<bean id="student" class="com.gdu.app01.xml01.Student">
+	 	<property name="stuNo" value="10101" />
+	 	<property name="name" value="강나래" />
+	 	<property name="calculator" ref="calc"/>
+	 	<!--                        bean의 id가 오는거임. -->
+	 	<!-- 빈을 값으로 가질떈 value라고 안하고 ref(레퍼런스)라고 한다. 약속임 -->
+	 
+	</bean>
+
+
+
+</beans>
