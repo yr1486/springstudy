@@ -16,6 +16,12 @@ public class MainClass {
 		System.out.println("작성자명: " + board.getWriter().getName());
 	
 		ctx.close();
+	
+	
+	
+	
+	
+	
 	}
 
 }
