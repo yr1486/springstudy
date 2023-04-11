@@ -16,6 +16,7 @@
 		<property name="content" value="도와줘요 아이언맨" />
 		<property name="writer" ref="user" />
 	</bean>
+
 	
 	-->
 	

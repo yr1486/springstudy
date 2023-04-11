@@ -2,7 +2,8 @@ package com.gdu.app01.xml01;
 
 public class Calculator {
 
-	// mathod
+
+// mathod
 	public void add(int a, int b) {
 		System.out.println(a + "+" + b + "= " + (a+b));
 	}
@@ -15,4 +16,5 @@ public class Calculator {
 	public void div(int a, int b) {
 		System.out.println(a + "/" + b + "= " + (a/b));
 	}
+
 }

@@ -10,6 +10,7 @@ public class MainClass {
 		AbstractApplicationContext ctx = new GenericXmlApplicationContext("xml03/app-context.xml");
 	
 		Board board = ctx.getBean("board", Board.class);
+		//					getBean("id")
 		System.out.println("제목: " + board.getTitle());
 		System.out.println("내용: " + board.getContent());
 		System.out.println("작성자ID: " + board.getWriter().getId());
