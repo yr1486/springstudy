@@ -3,7 +3,7 @@ package com.gdu.app01.xml01;
 public class Calculator {
 
 
-// mathod
+	// method
 	public void add(int a, int b) {
 		System.out.println(a + "+" + b + "= " + (a+b));
 	}

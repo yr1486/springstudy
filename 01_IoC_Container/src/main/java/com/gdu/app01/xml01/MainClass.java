@@ -8,7 +8,7 @@ public class MainClass {
 	public static void main(String[] args) {
 
 		/*
-		// Student hakseang 객체를 만들고, haksaeng 객체가 가지고 있는 계산기 사용하기
+		// Student haksaeng 객체를 만들고, haksaeng 객체가 가지고 있는 계산기 사용하기
 		
 		Student haksaeng = new Student();
 		haksaeng.setCalculator(new Calculator());
@@ -29,6 +29,7 @@ public class MainClass {
 		
 		// src/main/resources/xml01 디렉터리에 있는 app-context.xml 파일에 정의된 Bean을 쓸게요!
 		AbstractApplicationContext ctx = new GenericXmlApplicationContext("xml01/app-context.xml"); // src/main/resources는 명시하지 않는다.
+		
 		
 		// Bean 중에서 student란 id를 가진 Bean을 주세요
 		Student haksaeng = ctx.getBean("student", Student.class); // (Student).ctx.getBean("student")

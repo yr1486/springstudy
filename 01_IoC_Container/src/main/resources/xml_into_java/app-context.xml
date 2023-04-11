@@ -7,7 +7,7 @@
 
 	<bean id="attach" class="com.gdu.app01.xml_into_java.Attach">
 		<property name="filename" value="file.txt" />
-		<property name="path" value="C:storage" />
+		<property name="path" value="C:/storage" />
 	</bean>
 	
 	<bean id="upload" class="com.gdu.app01.xml_into_java.Upload">

@@ -6,7 +6,7 @@ public class User {
 	private String id;
 	private Contact contact;
 	
-	
+	// default constructor
 	public User() {
 		
 	}
@@ -19,6 +19,7 @@ public class User {
 	}
 
 
+	// method(getter, setter)
 	public String getId() {
 		return id;
 	}

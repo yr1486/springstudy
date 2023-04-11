@@ -16,7 +16,7 @@ public class MyConnection {
 	// method(getter, setter, getConnection)
 
 	public Connection getConnection() {
-		Connection con = null;
+		Connection con = null; // 외부 입출력 가능하게 하려면. 트라이캐치.
 		
 		try {
 			Class.forName(driver);

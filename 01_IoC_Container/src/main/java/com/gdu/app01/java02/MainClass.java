@@ -16,7 +16,7 @@ public class MainClass {
 
 		System.out.println("점수: " + student.getScores());
 		System.out.println("상: "+ student.getAwards());
-		System.out.println("연락처 : "+ student.getContact());
+		System.out.println("연락처: "+ student.getContact());
 		
 		ctx.close();
 	}

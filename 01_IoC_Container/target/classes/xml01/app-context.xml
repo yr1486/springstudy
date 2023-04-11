@@ -25,7 +25,8 @@
 	 
 	<!-- Calculator calc = new Calculator();  -->
 	<!-- bean = 객체, 지금 bean이 2개 있음 -->
-	<bean id="calc" class="com.gdu.app01.xml01.Calculator" />
+	<bean id="calc" class="com.gdu.app01.xml01.Calculator" /> 
+	
 	<bean id="student" class="com.gdu.app01.xml01.Student">
 	 	<property name="stuNo" value="10101" />
 	 	<property name="name" value="강나래" />

@@ -10,12 +10,14 @@ public class Contact {
 		
 	}
 	
-
+	// constructor
 	public Contact(String tel, String fax) {
 		super();
 		this.tel = tel;
 		this.fax = fax;
 	}
+	
+	// method(getter, setter)
 	public String getTel() {
 		return tel;
 	}

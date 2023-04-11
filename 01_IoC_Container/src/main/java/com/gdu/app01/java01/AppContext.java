@@ -22,10 +22,12 @@ public class AppContext {
 	 	안녕. 난 Bean을 만드는 메소드야.
 	 	반환타입이 Bean의 타입(<bean> 태그의 class 속성)이고,
 	 	메소드명이 Bean의 이름(<bean> 태그의 id 속성)이야.
+	 	
 	 */
+	
 	@Bean
-	public Contact contact1() {		// <bean id="contact1" class="Contaxt">
-		Contact c = new Contact(); // default constructor
+	public Contact contact1() {		// <bean id="contact1" class="Contact">
+		Contact c = new Contact();  // default constructor
 		c.setTel("02-2222-2220");	// setter <property name="tel" value="02-2222-2220">
 		c.setFax("02-2222-2229");	// setter <property name="fax" value="02-2222-2229">
 		return c;					// 반환한 객체 c가 Spring Container에 저장됩니다.
