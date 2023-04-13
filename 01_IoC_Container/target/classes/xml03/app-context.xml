@@ -6,7 +6,7 @@
 
 	<!-- 
 		Namespaces 탭에서 "p" 옵션을 체크하면
-		<property> 태그를 <bean>태그의 p: 속성으로 바꿔서 사용할 수 있다.	 
+		<property> 태그를 <bean>태그의 p: 속성으로 바꿔서 사용할 수 있다.	대신 사용할 수 있다. 코드가 줄어드니 더 좋은거. 
 	  -->
 	<bean id="user" class="com.gdu.app01.xml03.User" p:id="spiderman" p:name="피터파커" />
 	<bean id="board" class="com.gdu.app01.xml03.Board" p:title="공지" p:content="도와줘요 아이언맨" p:writer-ref="user" />

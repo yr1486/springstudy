@@ -25,9 +25,13 @@
 	 
 	<!-- Calculator calc = new Calculator();  -->
 	<!-- bean = 객체, 지금 bean이 2개 있음 -->
+	<!--  xml임에도 불구하고 자동완성이 가능하다. bean 태그가 만들어지면 spring이 new Calculator 해서 보관하고 있는 것. -->
+    <!-- 객체 이름이 아이디임.--> 
 	<bean id="calc" class="com.gdu.app01.xml01.Calculator" /> 
 	
 	<bean id="student" class="com.gdu.app01.xml01.Student">
+		 <!-- 1대1 대응 시켜주는 태그가 property -->
+		 <!-- ref = reference -> bean 이름과 일치 -->
 	 	<property name="stuNo" value="10101" />
 	 	<property name="name" value="강나래" />
 	 	<property name="calculator" ref="calc"/>
