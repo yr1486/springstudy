@@ -23,6 +23,8 @@ public class MvcController {
 	@GetMapping("/first.do")
 	public String first()	{
 		return "first";
+		
+		// 얘가  first 스 
 	}
 	
 	@GetMapping("/second.do")

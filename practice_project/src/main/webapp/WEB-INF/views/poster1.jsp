@@ -7,18 +7,17 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-
-
+<script src="${contextPath}/resources/js/lib/jquery-3.6.4.min.js"></script>
 </head>
 <body>
 
-	<h1>열공할꼬야</h1>
-
-	<div><a href="${contextPath}/first.do">이동1</a></div>
-	<div><a href="${contextPath}/second.do">이동2</a></div>
-	<div><a href="${contextPath}/third.do">이동3</a></div>
-	<div><a href="${contextPath}/fourth.do">이동4</a></div>
-	<div><a href="${contextPath}/fifth.do">이동5</a></div>
+<!--  -->
+	<div>
+		<form id="frm">
+        	<input type="text" placeholder="장소" size="5" name="place">
+			<input type="button" value="전송">
+		</form>
+	</div>
 	
 	
 </body>
