@@ -44,6 +44,36 @@
 				
 		})
 	}
+	
+	
+	function fn2() {
+		$.ajax({
+			// 요청
+			type: 'post',
+			url: '${contextPath}/third/ajax2',
+			data: JSON.stringify({
+				'name' : $('#name').val(),
+				'tel' : $('#tel').val()
+			}),
+			contentType: 'application/json',
+			
+			// 응답
+			dataType: 'json',
+			success: function(resData){ // resData = {"name":"민경태", "tel": "010"}
+				let str = '<ul>';
+				str += '<li>' + resData.name;
+				str += '<li>' + resData.tel;
+				$('#result').html(str); // first.jsp에서는 지우고(기존에 있던거 지우고 지우는코드맨위에썼음), append 해줬었음. 어펜드는 원래 있던거에 추가하는거라 초기화라고 보면됨 무튼 2개의 코드로 갈라졌던걸 하나의 html이라는 형태는 다르고 뜻으 같은 코드를 써준거야.
+			},
+			error: function(jqXHR){
+				if(jqXHR.status == 400) { // 빈문자열일때 400 번 내놓는거임  = BAD_REQUEST
+					alert('이름과 전화번호 입력을 확인하세요.');
+				}
+				
+			}
+				
+		})
+	}
 
 </script>
 </head>

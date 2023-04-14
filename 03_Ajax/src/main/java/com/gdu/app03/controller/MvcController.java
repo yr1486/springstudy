@@ -35,8 +35,15 @@ public class MvcController {
 		return "third";
 	}
 	
+	@GetMapping("/fourth.do")
+	public String fourth()	{
+		return "fourth";
+	}
 	
-	
+	@GetMapping("/fifth.do")
+	public String fifth()	{
+		return "fifth";
+	}
 	
 	
 	

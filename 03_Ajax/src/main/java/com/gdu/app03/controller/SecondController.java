@@ -26,14 +26,14 @@ public class SecondController {
 		this.secondService = secondService;
 	}
 	
-	@ResponseBody
+	// @ResponseEntity 안해도되 => ResponseEntity가 해줌
 	@GetMapping(value="/second/bmi1", produces=MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<BmiVO> bmi1(HttpServletRequest request) {
 		return secondService.execute1(request);
 		
 	}
 	
-	@ResponseBody
+	// @ResponseEntity 안해도되 => ResponseEntity가 해줌
 	@GetMapping("/second/bmi2") // produces가 없음에 주의합니다. (얘를 서비스. 반환객체 responseEntity에 Content-Type을 작성해서 보냅니다.)
 	public ResponseEntity<Map<String, Object>> bmi2(BmiVO bmiVO){
 		// <반환타입적어주는거임>
