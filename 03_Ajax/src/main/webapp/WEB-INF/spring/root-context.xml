@@ -13,6 +13,7 @@
 	<bean id="firstService" class="com.gdu.app03.service.FirstServiceImpl" />
 	
 	<bean id="secondService" class="com.gdu.app03.service.SecondServiceImpl" />
+	<bean id="ThirdService" class="com.gdu.app03.service.ThirdServiceImpl" />
 	
 	
 	
