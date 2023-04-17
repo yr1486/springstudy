@@ -7,6 +7,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.gdu.app04.domain.BoardDTO;
@@ -14,6 +15,24 @@ import com.gdu.app04.domain.BoardDTO;
 @Repository // DAO가 사용하는 @Component 이다.
 			// Spring Container에 Bean이 등록될 때,
 			// Singleton으로 등록되기 때문에 별도의 Singleton Pattern 코드를 작성할 필요가 없다.
+
+
+
+/// 다오에서 @레파지토리 해준거라서. 
+
+/*
+서비스임플에서 
+@Autowired 
+private BoardDAO boardDAO;
+
+하나로 뉴 안하고 쭉 쓸 수 있는거
+메소드 만들때도 뉴뉴뉴뉴 안하고.
+뉴뉴뉴뉴안할라고 싱글턴 쓴거
+ * 
+ *
+ */
+
+
 public class BoardDAO {
 	
 	// jdbc 방식
@@ -25,9 +44,9 @@ public class BoardDAO {
 	// private 메소드 - 1 (BoardDAO 클래스 내부에서만 사용)
 	public Connection getConnection() {
 		try {
-			Class.forName("oracle.jdbc.OracleDriver"); // ojdbc8.jar 메모리 로드
+			Class.forName("oracle.jdbc.OracleDriver");  // ojdbc8.jar 메모리 로드
 			return DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "GDJ61", "1111");
-		}catch (Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 			return null;
 		}
@@ -36,11 +55,10 @@ public class BoardDAO {
 	// private 메소드 - 2 (BoardDAO 클래스 내부에서만 사용)
 	private void close() {
 		try {
-			if(rs != null) rs.
-			close();
+			if(rs != null) rs.close();
 			if(ps != null) ps.close();
 			if(con != null) con.close();
-		}catch (Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
@@ -53,7 +71,6 @@ public class BoardDAO {
 	// 1. 목록
 	public List<BoardDTO> selectBoardList() {
 		List<BoardDTO> list = new ArrayList<BoardDTO>();
-		list.add(new BoardDTO(1, "제목", "내용", "작성자", "작성일", "수정일"));
 		
 		try {
 			con = getConnection(); // 시작은 커넥션 모든 DAO 메소드에서 변치 않음

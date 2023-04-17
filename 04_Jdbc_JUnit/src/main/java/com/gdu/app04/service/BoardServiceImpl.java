@@ -35,7 +35,7 @@ public class BoardServiceImpl implements BoardService {
 
 	@Override
 	public List<BoardDTO> getBoardList() {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
