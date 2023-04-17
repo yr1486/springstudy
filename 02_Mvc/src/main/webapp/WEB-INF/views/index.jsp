@@ -13,7 +13,7 @@
 <script>
 	$(function(){
 		$('#title').text('Hello World');
-	}) // 언니,, 화이팅 해,, 최고의 학생,, ♥
+	}) 
 </script>
 
 </head>
