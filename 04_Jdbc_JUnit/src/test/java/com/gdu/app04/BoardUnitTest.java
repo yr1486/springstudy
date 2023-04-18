@@ -65,7 +65,7 @@ public class BoardUnitTest {
 	@Test
 	public void a1삽입테스트() {
 		BoardDTO board = new BoardDTO(0, "제목", "내용", "작성자", null, null);
-		assertEquals(1, boardDAO.insetBoard(board)); //boardDAO.insetBoard(board) 결과가 1이면 테스트 성공!
+		assertEquals(1, boardDAO.insertBoard(board)); //boardDAO.insetBoard(board) 결과가 1이면 테스트 성공!
 		
 	}
 	

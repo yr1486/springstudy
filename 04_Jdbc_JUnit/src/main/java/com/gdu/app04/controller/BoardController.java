@@ -36,7 +36,7 @@ public class BoardController {
 	public String list() {
 		return null;
 	}
-	
+	달서의
 	
 	*/
 	
