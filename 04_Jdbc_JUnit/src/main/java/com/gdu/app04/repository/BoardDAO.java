@@ -7,10 +7,12 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.gdu.app04.domain.BoardDTO;
+
+
+// 오류 주의 : root-context.xml에 있으면 이거 먼저 읽어서 안됨!! 주의하기.
 
 @Repository // DAO가 사용하는 @Component 이다.
 			// Spring Container에 Bean이 등록될 때,
@@ -42,7 +44,7 @@ public class BoardDAO {
 	private String sql;
 
 	// private 메소드 - 1 (BoardDAO 클래스 내부에서만 사용)
-	public Connection getConnection() {
+	private Connection getConnection() {
 		try {
 			Class.forName("oracle.jdbc.OracleDriver");  // ojdbc8.jar 메모리 로드
 			return DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "GDJ61", "1111");
@@ -108,7 +110,6 @@ public class BoardDAO {
 				
 			}
 			
-			
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
@@ -121,7 +122,7 @@ public class BoardDAO {
 	// 삽입 수정 삭제 패턴이 같은거 이해하기.
 	// 3. 삽입
 	
-	public int insetBoard(BoardDTO board) {
+	public int insertBoard(BoardDTO board) {
 		int result = 0;
 		try {
 			con = getConnection(); // 시작은 커넥션 모든 DAO 메소드에서 변치 않음

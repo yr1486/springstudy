@@ -13,11 +13,69 @@
 <script src="${contextPath}/resources/summernote-0.8.18-dist/summernote-lite.min.js"></script>
 <script src="${contextPath}/resources/summernote-0.8.18-dist/lang/summernote-ko-KR.js"></script>
 <link rel="stylesheet" href="${contextPath}/resources/summernote-0.8.18-dist/summernote-lite.min.css">
-<!-- head부분이 될거야. jquery먼저 포함시키고 그다음 쭉쭉쭉. -->
+<style>
+	/* 제목,작성자,작성일자 어디를 선택하든 클릭할 수 있게. */
+	tbody tr:hover {
+		background-color: beige;
+		cursor: pointer;
+	}
+	
+</style>
+<script>
+	function fnDetail(n) {
+		location.href = '${contextPath}/board/detail.do?board_no=' + n;
+	}
+	
+</script>
 </head>
 <body>
 
-	<a href="${contextPath}/board/list.do">게시판</a>
+	<br>
+	<!-- boardController에서 처리되는거야 -->
+	<div>
+		<a href="${contextPath}/board/write.do">새글작성하기</a>
+		
+	</div>
+	
+	<br>
+	
+	<div>
+		<table border="1">
+			<thead>
+				<tr>
+					<td>제목</td>
+					<td>작성일</td>
+					<td>작성일자</td>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<c:if test="${empty boardList}">
+					<tr>
+						<td colspan="3">첫 게시글의 주인공이 되어 보세요!</td>
+					</tr>
+					
+				</c:if>
+				<c:if test="${not empty boardList}">
+					<c:forEach items="${boardList}" var="b">
+					
+						<tr onclick="fnDetail(${b.board_no})">
+							<td>${b.title}</td>
+							<td>${b.writer}</td>
+							<td>${b.created_at}</td>
+						</tr>
+						
+					</c:forEach>
+				</c:if>
+			</tbody>
+			
+		</table>
+		
+		<!-- b는 boardDTO임, 자바문법도 가능하지만,
+		b.getTitle , b.title로써도 el이 알아서 b.getTitle로 써준다
+		b.title로 써라. -->
+	</div>
+
 
 </body>
 </html>
