@@ -28,6 +28,10 @@
 	function fnList(){
 		location.href = '${contextPath}/board/list.do';
 	}
+	function fnBack(){
+		$('#edit_screen').hide();
+		$('#detail_screen').show();
+	}
 	
 	/* https://summernote.org/ 에서 가져옴  */
 	$(function(){

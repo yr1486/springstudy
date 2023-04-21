@@ -50,7 +50,7 @@
 			</thead>
 			
 			<tbody>
-				<c:if test="${empty boardList}">
+				<c:if test="${empty noticeList}">
 					<tr>
 						<td colspan="3">첫 게시글의 주인공이 되어 보세요!</td>
 					</tr>

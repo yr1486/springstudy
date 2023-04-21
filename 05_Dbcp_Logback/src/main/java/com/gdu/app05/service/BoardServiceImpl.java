@@ -7,39 +7,35 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.gdu.app05.domain.BoardDTO;
 import com.gdu.app05.repository.BoardDAO;
 
-// @Service 대신 Appconfig에 @Bean이 등록되어 있다.
+// @Service 대신 AppConfig에 @Bean이 등록되어 있다.
 public class BoardServiceImpl implements BoardService {
 
 	@Autowired
 	private BoardDAO boardDAO;
 	
 	@Override
-	public List<BoardDTO> getboardList() {
+	public List<BoardDTO> getBoardList() {
 		return boardDAO.selectBoardList();
 	}
 
 	@Override
 	public BoardDTO getBoardByNo(int board_no) {
-		// TODO Auto-generated method stub
-		return null;
+		return boardDAO.selectBoardByNo(board_no);
 	}
 
 	@Override
 	public int addBoard(BoardDTO board) {
-		// TODO Auto-generated method stub
-		return 0;
+		return boardDAO.insertBoard(board);
 	}
 
 	@Override
 	public int modifyBoard(BoardDTO board) {
-		// TODO Auto-generated method stub
-		return 0;
+		return boardDAO.updateBoard(board);
 	}
 
 	@Override
 	public int removeBoard(int board_no) {
-		// TODO Auto-generated method stub
-		return 0;
+		return boardDAO.deleteBoard(board_no);
 	}
 
 }

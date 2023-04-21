@@ -82,6 +82,7 @@ public class BoardDAO {
 			
 			while(rs.next()) { 
 				BoardDTO board = new BoardDTO(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getString(6));
+				//         2. 보드타입에 넣어주기.          1. 데이터들을
 				list.add(board); // array리스트에 담기
 			}
 		} catch (Exception e) {

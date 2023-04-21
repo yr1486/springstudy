@@ -29,11 +29,6 @@
 	<h1>${board.boardNo}</h1>
 	<h1>${board.title}</h1>
 	
-	
-	
-	
-	
-	
 </body>
 </html>
 

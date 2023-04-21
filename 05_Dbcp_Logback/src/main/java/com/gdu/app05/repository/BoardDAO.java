@@ -19,9 +19,9 @@ import com.gdu.app05.domain.BoardDTO;
 
 // 오류 주의 : root-context.xml에 있으면 이거 먼저 읽어서 안됨!! 주의하기.
 
-@Repository // DAO가 사용하는 @Component 이다.
-			// Spring Container에 Bean이 등록될 때,
-			// Singleton으로 등록되기 때문에 별도의 Singleton Pattern 코드를 작성할 필요가 없다.
+// @Repository  // DAO가 사용하는 @Component 이다.
+				// Spring Container에 Bean이 등록될 때,
+				// Singleton으로 등록되기 때문에 별도의 Singleton Pattern 코드를 작성할 필요가 없다.
 
 
 
@@ -39,7 +39,7 @@ private BoardDAO boardDAO;
  *
  */
 
-
+@Repository
 public class BoardDAO {
 	
 	// dbcp 방식(jdbc + DataSource)
@@ -49,13 +49,13 @@ public class BoardDAO {
 	private String sql;
 	private DataSource dataSource;
 
-	// BoardDAO 생성자(webapp/Meta-INF/context.xml에 작성한 <Resource> 태그 읽기)
+	// BoardDAO 생성자 (webapp/META-INF/context.xml에 작성한 <Resource> 태그 읽기)
 	public BoardDAO() {
 		// JNDI 방식 : <Resource> 태그의 name 속성으로 Resource를 읽어 들이는 방식
 		try {
 			Context context = new InitialContext();
-			dataSource = (DataSource)context.lookup("java:comp/env/jdbc/GDJ61"); // context.xml에서
-		}catch (Exception e) {
+			dataSource = (DataSource)context.lookup("java:comp/env/jdbc/GDJ61");
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
@@ -65,7 +65,7 @@ public class BoardDAO {
 		try {
 			if(rs != null) rs.close();
 			if(ps != null) ps.close();
-			if(con != null) con.close(); // 사용한 Connection을 dataSource에게 반납한다.
+			if(con != null) con.close();  // 사용한 Connection을 dataSource에게 반납한다.
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -81,14 +81,12 @@ public class BoardDAO {
 	// 1. 목록
 	public List<BoardDTO> selectBoardList() {
 		List<BoardDTO> list = new ArrayList<BoardDTO>();
-		
 		try {
-			con = dataSource.getConnection(); // dataSource가 관리하는 Connection 8개 중 하나를 대여한다.
+			con = dataSource.getConnection();  // dataSource가 관리하는 Connection 8개 중 하나를 대여한다.
 			sql = "SELECT BOARD_NO, TITLE, CONTENT, WRITER, CREATED_AT, MODIFIED_AT FROM BOARD ORDER BY BOARD_NO DESC";
 			ps = con.prepareStatement(sql);
 			rs = ps.executeQuery();
-			
-			while(rs.next()) { 
+			while(rs.next()) {
 				BoardDTO board = new BoardDTO(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getString(6));
 				list.add(board); // array리스트에 담기
 			}
@@ -103,7 +101,6 @@ public class BoardDAO {
 	
 	
 	// 2. 상세
-	
 	public BoardDTO selectBoardByNo(int board_no) {
 		BoardDTO board = null;
 		try {
