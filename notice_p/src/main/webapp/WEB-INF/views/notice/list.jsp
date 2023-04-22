@@ -50,19 +50,19 @@
 				</tr>
 			</thead>
 			<tbody>
-				<c:if test="${empty noticeList}"> <!-- 다오 > 서비스임플 > 컨트롤러까지 와서 여기로 담긴다 -->
+				<c:if test="${empty noti}"> <!-- 다오 > 서비스임플 > 컨트롤러까지 와서 여기로 담긴다 -->
 					<tr>
 						<td colspan="2">등록된 공지사항이 없습니다.</td>
 					</tr>
 				</c:if>
 				
 				
-				<c:if test="${not empty noticeList}">
+				<c:if test="${not empty noti}">
 					
-					<c:forEach items="${noticeList}" var="notice">
+					<c:forEach items="${noti}" var="n">
 						<tr>
-							<td>${notice.notice_no}</td>
-							<td><a href="${contextPath}/notice/detail.do?notice_no=${notice.notice_no}">${notice.title}</a></td>
+							<td>${n.notice_no}</td>
+							<td><a href="${contextPath}/notice/detail.do?notice_no=${n.notice_no}">${n.title}</a></td>
 						</tr>
 					</c:forEach>
 					

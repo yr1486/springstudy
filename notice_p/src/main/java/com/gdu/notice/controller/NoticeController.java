@@ -31,7 +31,7 @@ public class NoticeController {
 	@GetMapping("/notice/list.do")
 	public String list(Model model) {
 		// notice/list.jsp로 forward할 때 목록 조회 결과를 보내기 위해서 Model을 사용한다.
-		model.addAttribute("noticeList", noticeService.getNoticeList());
+		model.addAttribute("noti", noticeService.getNoticeList());
 		return "notice/list";
 	}
 	

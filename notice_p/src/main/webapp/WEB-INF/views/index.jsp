@@ -11,6 +11,7 @@
 </head>
 <body>
 
+
 	<a href="${contextPath}/notice/list.do">공지사항</a>
 	
 </body>

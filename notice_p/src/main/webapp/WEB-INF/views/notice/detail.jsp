@@ -46,6 +46,20 @@
 
 	<div id="detail_screen">
 		
+		<h1>${notice.notice_no}번 공지사항</h1>
+		<div>구분 :
+		<c:if test="${notice.gubun eq 1}">
+		<span>긴급</span>
+		</c:if>
+		<c:if test="${notice.gubun eq 2}">
+		<span>일반</span>
+		</c:if>
+		</div>
+		<div>제목 : ${notice.title}</div>
+		<div>${notice.content}</div>
+		
+		
+		
 		<hr>
 		<div>
 			<input type="button" value="편집" onclick="fnEdit()">
@@ -57,8 +71,36 @@
 	<div id="edit_screen">
 		<div style="cursor: pointer;" onclick="fnBack()">← 뒤로 가기</div>
 		<h1>공지사항 편집하기</h1>
-		<form>
-			
+			<form method="post" action="${contextPath}/notice/modify.do">
+			<div>
+				<c:if test="${notice.gubun eq 2}">
+				<label for="gubun">구분</label>
+				<select id="gubun" name="gubun">
+					<option value="1">긴급</option>
+					<option selected value="2" selected>일반</option>	
+				</select>
+				</c:if>
+				<c:if test="${notice.gubun eq 1}">
+				<label for="gubun">${notice.gubun}</label>
+				<select id="gubun" name="gubun">
+					<option selected value="1">긴급</option>
+					<option value="2" selected>일반</option>	
+				</select>
+				</c:if>
+			</div>
+			<div>
+				<label for="title">제목</label>
+				<input type="text" id="title" name="title" value="${notice.title}">
+			</div>
+			<div>
+				<div><label for="content">내용</label></div>
+				<textarea id="content" name="content" rows="5" cols="30">${notice.content}</textarea>
+			</div>
+			<div>
+			<input type="hidden" name="notice_no" value="${notice.notice_no}"> 
+				<button>수정완료</button>
+				<input type="button" value="목록" onclick="fnList()">
+			</div>
 		</form>
 	</div>
 	
