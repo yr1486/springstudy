@@ -31,8 +31,15 @@ public class NoticeController {
 	@GetMapping("/notice/list.do")
 	public String list(Model model) {
 		// notice/list.jsp로 forward할 때 목록 조회 결과를 보내기 위해서 Model을 사용한다.
-		model.addAttribute("noti", noticeService.getNoticeList());
+		model.addAttribute("noti", noticeService.getNoticeList()); //  결국 jsp에서 요청되서 c > s > d 거쳐 다시 리턴된 값이. 컨트롤러까지와서. jsp로 가는거지
 		return "notice/list";
+	
+		// Model의 사용이 컨트롤러에서 뷰(jsp)로 데이터를 전달할 수 있는 객체이다.
+	
+		// 궁금. 그럼 리턴된 값을 모델에 담았는데. 값이 있는 애를 전달해야해서 얘는 포워드이고, 값을 jsp에 파라미터?로 전달해주려면
+		// 모델로 저장을 해야해서. 근데 모델에 저장된애가 어떻게. 파라미터로 들어간다는 거지?
+	
+	
 	}
 	
 	@GetMapping("/notice/write.do")

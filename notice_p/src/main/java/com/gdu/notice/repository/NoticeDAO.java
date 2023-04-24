@@ -12,7 +12,7 @@ import org.springframework.stereotype.Repository;
 import com.gdu.notice.domain.NoticeDTO;
 
 @Repository
-public class NoticeDAO {
+public class NoticeDAO { // dao는 DB와 연결해주는 역할. 담기만 해.
 
 	private Connection con;
 	private PreparedStatement ps;
@@ -37,6 +37,8 @@ public class NoticeDAO {
 	}
 	
 	// 모든 공지사항을 NOTICE_NO의 내림차순으로 정렬하여 반환하시오.
+	
+	/*
 	public List<NoticeDTO> getNoticeList() {
 		 List<NoticeDTO> list = new ArrayList<NoticeDTO>(); // 어레이리스트인 이유 : 셀렉트문을 돌리면 여러행이 나오기떄문에. 얘를 배열로 가지고 와야하니까. 어레이인거야.
 		 
@@ -56,6 +58,34 @@ public class NoticeDAO {
 			  close();
 		  }
 		 return list;
+	
+	}
+	*/
+	
+	public List<NoticeDTO> getNoticeList() { // 리스트는. 많은 정보를 담고 있잖아. 사진도 있고, 테이블도 있고 이런 애들을. 배열에 저장해야하니까. 어레이 리스트를 썼어.
+		List<NoticeDTO> list = new ArrayList<NoticeDTO>(); // 여기 맨위에 선언한다는 건. 얘의 값을. 반환하겠다는 거지.트라이캐치안은 한번쓰고 버릴거니까. 얜 밖에 있으니까. 또 쓸 수 있자나.
+		
+		try {
+			con = getConnection();
+			// 연결메소드 호출
+			sql = "SELECT NOTICE_NO, GUBUN, TITLE, CONTENT FROM NOTICE";
+			// 쿼리문 담기
+			ps = con.prepareStatement(sql);
+			// 준비된 쿼리문 연결해줘.
+			rs = ps.executeQuery();
+			// 실행해줘.
+			while(rs.next()) {
+				// 만약 실행된 커리문에 다음이 있다면,
+				NoticeDTO notice = new NoticeDTO(rs.getInt(1), rs.getInt(2), rs.getString(3), rs.getString(4));
+				list.add(notice);
+			} 
+		}catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			close();
+		}
+		return list;
+		
 	
 	}
 	

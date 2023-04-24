@@ -43,12 +43,14 @@
 	
 	<div>
 		<table border="1">
+		
 			<thead>
 				<tr>
 					<td>공지번호</td>
 					<td>제목</td>
 				</tr>
 			</thead>
+			
 			<tbody>
 				<c:if test="${empty noti}"> <!-- 다오 > 서비스임플 > 컨트롤러까지 와서 여기로 담긴다 -->
 					<tr>
@@ -65,6 +67,7 @@
 							<td><a href="${contextPath}/notice/detail.do?notice_no=${n.notice_no}">${n.title}</a></td>
 						</tr>
 					</c:forEach>
+					<!-- td안에 title이 보여질거고, title을 누르면 보여질 링크가 심어져 있는거임. -->
 					
 				</c:if>
 			</tbody>
