@@ -21,7 +21,7 @@
 	
 	$(function(){
 		$('#content').summernote({
-			width: 640, 
+			width: 640,
 			height: 480,
 			lang: 'ko-KR',
 			toolbar: [
@@ -34,7 +34,9 @@
 				['insert', ['link', 'picture', 'video']],
 				['view', ['fullscreen', 'codeview', 'help']]
 			]
+		})
 	})
+	
 
 </script>
 

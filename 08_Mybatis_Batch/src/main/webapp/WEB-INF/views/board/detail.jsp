@@ -18,16 +18,16 @@
 	
 
 
-	function fnEdit() {
-		$('#edit_screen').show();
-		$('#detail_screen').hide();
-		
+function fnEdit(){
+	$('#edit_screen').show();
+	$('#detail_screen').hide();
+}
+
+function fnRemove(){
+	if(confirm('삭제할까요?')){
+		$('#frm_remove').submit();
 	}
-	function fnRemove(){
-		if(confirm('삭제할까요?')) {
-			$('#frm_remove').submit();
-		}
-	}
+}
 	/* submit => 폼에 있는걸 가지고 액션으로 . 파리미터를 보내주는 거임 */
 	
 	function fnList(){
@@ -42,7 +42,7 @@
 	/* https://summernote.org/ 에서 가져옴  */
 	$(function(){
 		$('#content').summernote({
-			width: 640, 
+			width: 640,
 			height: 480,
 			lang: 'ko-KR',
 			toolbar: [
@@ -56,20 +56,8 @@
 				['view', ['fullscreen', 'codeview', 'help']]
 			]
 		})
-		
-		$('#edit_screen').hide(); // 최초 편집화면은 숨김 처리.
-		let modifyResult = '${modifyResult}';
-		if(modifyResult != ''){
-			if(modifyResult == '1'){
-				alert('게시글이 수정되었습니다.');
-			}
-			else {
-				alert('게시글 수정이 실패했습니다.')
-			}
-		}
-		
+		$('#edit_screen').hide();  // 최초 편집화면은 숨김
 	})
-	/* 제목 공란으로해서 수정하면 500나오는게 맞음. 안했음. */
 
 </script>
 </head>
@@ -82,9 +70,9 @@
 		<div>작성일 : ${b.createdAt}</div>
 		<div>수정일 : ${b.modifiedAt}</div>
 		<div>${b.content}</div>
-		<form id="frm_remove" action="${contextPath}/board/remove.do" method="post"> <!-- 리무브로보내는 파라미터, 보내려면 네임속성이 있어야해 중요 -->
+	<form id="frm_remove" action="${contextPath}/board/remove.do" method="post"> <!-- 리무브로보내는 파라미터, 보내려면 네임속성이 있어야해 중요 -->
 			<input type="hidden" name="boardNo" value="${b.boardNo}"> <!-- boardNo라는 파라미터가 넘어가는거야. -->
-		</form>
+	</form>
 		<div>
 			<input type="button" value="편집" onclick="fnEdit()">
 			<input type="button" value="삭제" onclick="fnRemove()">
@@ -93,16 +81,16 @@
 	</div>
 
 	<div id="edit_screen">
-	<div style="cursor: pointer;" onclick="fnBack()"><i class="fa-solid fa-arrow-left"></i> 뒤로 가기</div>
+		<div style="cursor: pointer;" onclick="fnBack()"><i class="fa-solid fa-arrow-left"></i> 뒤로 가기</div>
 		<h1>편집화면</h1>
 		<form method="post" action="${contextPath}/board/modify.do">
 			<div>
-				<label for="title">제목</label> 
+				<label for="title">제목</label>
 				<input type="text" id="title" name="title" value="${b.title}">
 			</div>
 			<div>
 				<div><label for="content">내용</label></div>
-				<textarea id="content" name="content">${b.content}</textarea><!-- summernote 편집기로 바뀌는 textarea -->
+				<textarea id="content" name="content">${b.content}</textarea>  <!-- summernote 편집기로 바뀌는 textarea -->
 			</div>
 			<div>
 				<input type="hidden" name="boardNo" value="${b.boardNo}">

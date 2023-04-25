@@ -35,14 +35,7 @@ public interface BoardMapper { // 7장과 다른점 : class > interface로 ,  �
 	public int deleteBoard(int boardNo);
 	public int deleteBoardList(List<String> boardNoList);
 	public int selectBoardCount();
-	
-
-
-
-
-
 }
-
 
 
 

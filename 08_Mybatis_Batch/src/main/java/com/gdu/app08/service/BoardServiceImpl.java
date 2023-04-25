@@ -1,7 +1,7 @@
 package com.gdu.app08.service;
 
 import java.io.PrintWriter;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.List;
 
@@ -59,7 +59,7 @@ public class BoardServiceImpl implements BoardService {
 			
 			out.println("<script>");
 			if(addResult == 1) {
-				out.println("alert('게시글이 등록ㅍ되었습니다.')");
+				out.println("alert('게시글이 등록되었습니다.')");
 				out.println("location.href='" + request.getContextPath() + "/board/list.do'");
 			} else {
 				out.println("alert('게시글이 등록되지 않았습니다.')");
@@ -90,7 +90,7 @@ public class BoardServiceImpl implements BoardService {
 		board.setBoardNo(boardNo);
 		
 		int modifyResult = boardMapper.updateBoard(board);
-		
+	
 		try {
 			
 			response.setContentType("text/html; charset=UTF-8");
@@ -131,8 +131,7 @@ public class BoardServiceImpl implements BoardService {
 			if(removeResult == 1) {
 				out.println("alert('게시글이 삭제되었습니다.')");
 				out.println("location.href='" + request.getContextPath() + "/board/list.do'");
-			} 
-			else {
+			} else {
 				out.println("alert('게시글이 삭제되지 않았습니다.')");
 				out.println("history.back()");
 			}
@@ -148,19 +147,19 @@ public class BoardServiceImpl implements BoardService {
 	
 	@Override
 	public void removeBoardList(HttpServletRequest request, HttpServletResponse response) {
-
+		
 		// 파라미터 boardNoList
-		String[] boardNoList = request.getParameterValues("boardNoList");
+		String[] boarNoList = request.getParameterValues("boardNoList");
 		
-		int removeResult = boardMapper.deleteBoardList(Arrays.asList(boardNoList)); // Arrays.asList(boarddNoList): String[] boardList로 바꾸는 코드. 어레이리스트초기화할때 많이 썼었음.
+		int removeResult = boardMapper.deleteBoardList(Arrays.asList(boarNoList));  // Arrays.asList(boarNoList) : String[] boarNoList를 ArrayList로 바꾸는 코드
 		
-	try {
+		try {
 			
 			response.setContentType("text/html; charset=UTF-8");
 			PrintWriter out = response.getWriter();
 			
 			out.println("<script>");
-			if(removeResult == boardNoList.length) {
+			if(removeResult == boarNoList.length) {
 				out.println("alert('선택된 모든 게시글이 삭제되었습니다.')");
 				out.println("location.href='" + request.getContextPath() + "/board/list.do'");
 			} else {
@@ -174,19 +173,18 @@ public class BoardServiceImpl implements BoardService {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	
+		
 	}
 	
 	@Override
 	public void getBoardCount() {
 		// 게시글이 몇개다.
 		int boardCount = boardMapper.selectBoardCount();
-		String msg = "[" + LocalDate.now().toString() + "] 게시글 갯수는 " + boardCount + "개입니다.";
+		String msg = "[" + LocalDateTime.now().toString() + "] 게시글 갯수는 " + boardCount + "개입니다.";
 		System.out.println(msg);
-		
-
-		
 	}
+		
+	
 	
 	
 	

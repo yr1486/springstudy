@@ -3,7 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
   
- <!-- namespace는 @Mapper를 지정한다.--> 
+<!-- namespace는 @Mapper를 지정한다. -->
 <mapper namespace="com.gdu.app08.mapper.BoardMapper">
 
 	
@@ -36,7 +36,6 @@
 		 WHERE BOARD_NO = #{boardNo}
 	</select>
 
-
 	<insert id="insertBoard" parameterType="Board">
 		INSERT INTO BOARD 
 			(BOARD_NO, TITLE, CONTENT, WRITER, CREATED_AT, MODIFIED_AT)
@@ -62,16 +61,16 @@
 	<!-- arrayList가 전달되는거다 -->
 	<delete id="deleteBoardList" parameterType="List">
 		DELETE
-		  FROM BOARD	
+		  FROM BOARD
 		<where>
-			<foreach collection="list" item="boardNo" open="BOARD_NO_IN(" separator="," close=")">
+			<foreach collection="list" item="boardNo" open="BOARD_NO IN(" separator="," close=")">
 				#{boardNo}
 			</foreach>
 		</where>
 	</delete>
 	
 	<!-- 셀렉트를 써서. 지금 게시글이 몇개다 나타내기 -->
-	<select id="getBoardCount" resultType="int">
+	<select id="selectBoardCount" resultType="int">
 		SELECT COUNT(*)
 		  FROM BOARD
 	</select>
