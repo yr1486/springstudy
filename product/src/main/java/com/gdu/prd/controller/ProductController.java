@@ -40,7 +40,17 @@ public class ProductController {
 		/* 3 */ return "redirect:/product/list.do";
 	}
 
-
+	@GetMapping("/detail.do")
+	public String detail(@RequestParam(value="prodNo", required = false, defaultValue = "0") int prodNo, Model model) { // 리크ㅔ스트파람을써서 없을때를 대비.
+		productService.loadProduct(prodNo, model); // 모델을 저장해주고 전달할수 있게끔.
+		return "product/detail";
+	}
+	
+	@PostMapping("/edit.do")
+	public String edit(ProductDTO product) { // 모델이 없는데 왜 전달이 되지 ? =>  객체로 받으면, model을 안써도됨. 자동으로 전달됨! 자동으로 포워드!!!된다는거알고있기. 리퀘스트나 파람은 안되. 모델 있어야 해. // 대신 jsp에서 첫글자가 소문자로 바뀐 productDTO로 전달되고,. 그이름쓰인거 보기
+		return "product/edit";
+		
+	}
 
 
 

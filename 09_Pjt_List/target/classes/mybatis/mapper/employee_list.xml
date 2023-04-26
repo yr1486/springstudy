@@ -7,7 +7,7 @@
 <mapper namespace="com.gdu.app09.mapper.EmployeeListMapper">
 
 	
-	<!-- DEPARTMENTS 와 EMPLOYEES의 JOIN 결과를 저장 할 ResultMap 만들기 -->
+		<!-- DEPARTMENTS와 EMPLOYEES의 JOIN 결과를 저장할 resultMap 만들기 -->
 	<resultMap type="EmpDTO" id="EmpMap">
 		<id column="EMPLOYEE_ID" property="employeeId"/>
 		<result column="FIRST_NAME" property="firstName"/>
@@ -32,18 +32,37 @@
 		SELECT COUNT(*)
 		  FROM EMPLOYEES
 	</select>
+
 	
+	<!-- 
+		오라클의 기본 동작은 문자로 담겨있는 숫자를 자동으로 1로 바꿈  : '1' -> TO CHAR('1')
+		
+		#{} 와 ${}의 차이 	
+			#{} : 변수 값을 작은따옴표(')로 묶어서 나타낸다.	- 변수 값 용도로 사용 , 숫자든 문자든 가리지 말고
+			ORDER BY EMPLOYEE_ID #{order} -> ORDER BY EMPLOYEE_ID 'ASC'로 처리되기 때문에 SQL문법 오류가 발생한다.
+			
+			${} : 변수 값을 따옴표로 묶지 않고 그대로 나타낸다. - 쿼리문의 키워드나, 칼럼 자체를 전달할 때 사용 EX) 키워드: SELECT, EMPLOYEE_ID: 칼럼 
+			ORDER BY EMPLOYEE_ID ${order} -> ORDER BY EMPLOYEE_ID ASC로  처리되기 때문에 SQL문법 오류가 발생한다.
+		
+	-->
 	
 	<!-- 복잡한 쿼리는 디벨로퍼에서 먼저 작성 후 돌아가는지 확인하고 여기서 확인하기!!!! -->
+	
 	<select id="getEmployeeListUsingPagination" parameterType="Map" resultMap="EmpMap">
+		SELECT A.RN, A.EMPLOYEE_ID, A.FIRST_NAME, A.LAST_NAME, A.EMAIL, A.PHONE_NUMBER, A.HIRE_DATE, A.JOB_ID, A.SALARY, A.COMMISSION_PCT, A.MANAGER_ID, NVL(A.DEPARTMENT_ID, 0) AS DEPARTMENT_ID, NVL(A.DEPARTMENT_NAME, 'None') AS DEPARTMENT_NAME
+		  FROM (SELECT ROW_NUMBER() OVER(ORDER BY ${column} ${order}) AS RN, E.EMPLOYEE_ID, E.FIRST_NAME, E.LAST_NAME, E.EMAIL, E.PHONE_NUMBER, E.HIRE_DATE, E.JOB_ID, E.SALARY, E.COMMISSION_PCT, E.MANAGER_ID, E.DEPARTMENT_ID, D.DEPARTMENT_NAME
+		          FROM DEPARTMENTS D RIGHT OUTER JOIN EMPLOYEES E
+		            ON D.DEPARTMENT_ID = E.DEPARTMENT_ID) A
+		 WHERE A.RN BETWEEN #{begin} AND #{end}
+	</select>
+
+	<select id="getEmployeeListUsingScroll" parameterType="Map" resultMap="EmpMap">
 		SELECT A.RN, A.EMPLOYEE_ID, A.FIRST_NAME, A.LAST_NAME, A.EMAIL, A.PHONE_NUMBER, A.HIRE_DATE, A.JOB_ID, A.SALARY, A.COMMISSION_PCT, A.MANAGER_ID, NVL(A.DEPARTMENT_ID, 0) AS DEPARTMENT_ID, NVL(A.DEPARTMENT_NAME, 'None') AS DEPARTMENT_NAME
 		  FROM (SELECT ROW_NUMBER() OVER(ORDER BY EMPLOYEE_ID ASC) AS RN, E.EMPLOYEE_ID, E.FIRST_NAME, E.LAST_NAME, E.EMAIL, E.PHONE_NUMBER, E.HIRE_DATE, E.JOB_ID, E.SALARY, E.COMMISSION_PCT, E.MANAGER_ID, E.DEPARTMENT_ID, D.DEPARTMENT_NAME
 		          FROM DEPARTMENTS D RIGHT OUTER JOIN EMPLOYEES E
 		            ON D.DEPARTMENT_ID = E.DEPARTMENT_ID) A
 		 WHERE A.RN BETWEEN #{begin} AND #{end}
 	</select>
-
-	
 	
 	
 	

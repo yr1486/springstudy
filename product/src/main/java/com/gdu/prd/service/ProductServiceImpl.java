@@ -27,6 +27,11 @@ public class ProductServiceImpl implements ProductService {
 		/* 2 */ return addResult;
 	}
 
+	@Override
+	public void loadProduct(int prodNo, Model model) {
+			ProductDTO productDTO = productMapper.getproductByNo(prodNo); // 디비에서 가지고 오는작업.
+			model.addAttribute("productDTO", productDTO);
+	}
 	
 	
 }

@@ -10,89 +10,33 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script src="${contextPath}/resources/js/lib/jquery-3.6.4.min.js"></script>
-<script>
-	let addResult = '${addResult}';
-	if(addResult != ''){
-		if(addResult == '1'){
-			alert('삽입 성공!');
-		}
-		else {
-			alert('삽입 실패!');
-		}
-	}
-	
-	$(function(){
-		$('.product').on('click', function(){
-			location.href = '${contexetPath}/product/detail.do?prodNo=' + $(this).find('span').text();
-		});
-	})
-</script>
-<style>
-	.product {
-		width: 200px;
-		border: 1px solid gray;
-	}
-	.product:hover {
-		cursor: pointer;
-		background-color: silver;
-	}
-
-		
-</style>
 </head>
 <body>
 
 	<div>
-		${productCount}개 제품이 있습니다.
-		<h3>제품 등록 화면</h3>
-		<form method="post" action="${contextPath}/product/add.do">
+		<h3>제품 편집 화면</h3>
+		<form method="post" action="${contextPath}/product/modify.do">
 			<div>
 				<label for="prodName">제품이름</label>
-				<input id="prodName" name="prodName" required="required">
+				<input id="prodName" name="prodName" value="${productDTO.prodName}">
 			</div>
 					
+					
+					
+					
+					<!-- 리스트랑 에딧 바뀐거같음 -->
 			<div>
 				<label for="prodPrice">제품가격</label>
-				<input id="prodPrice" name="prodPrice">
+				<input id="prodPrice" name="prodPrice" value="${productDTO.prodPrice}">
 			</div>	
 			<div>
-				<button>제품등록하기</button>
-				<input type="reset" value="다시작성하기">
+				<button>제품정보수정하기</button>
+				<input type="reset" value="초기화">
 				<!-- 화면 넘어갈 필요없이. 바로 등록처리 -->
 			</div>
 		</form>
 	</div>
 	
-	<hr>
-	
-	<div>
-		<c:forEach items="${productList}" var="product">
-			<ul class="product">
-				<li>제품번호 <span>${product.prodNo}</span></li>
-				<li>제품이름 <span>${product.prodName}</span></li>
-			</ul>
-			<hr>
-		</c:forEach>
-	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>
