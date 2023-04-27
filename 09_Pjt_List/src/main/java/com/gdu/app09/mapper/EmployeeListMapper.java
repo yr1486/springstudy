@@ -13,5 +13,6 @@ public interface EmployeeListMapper {
 	public int getEmployeeCount();
 	public List<EmpDTO> getEmployeeListUsingPagination(Map<String, Object> map);
 	public List<EmpDTO> getEmployeeListUsingScroll(Map<String, Object> map);
+	public List<EmpDTO> getEmployeeListUsingSearch(Map<String, Object> map);
 	
 }

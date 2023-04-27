@@ -40,11 +40,15 @@ public class EmployeeController {
 	}
 	
 	@ResponseBody //
-	@GetMapping(value="/employee/scroll.do", produces="application/json") //이 맵을 json타입으로 잭슨이 바꿔줄거임.
+	@GetMapping(value="/employees/scroll.do", produces="application/json") //이 맵을 json타입으로 잭슨이 바꿔줄거임.
 	public Map<String, Object> scroll(HttpServletRequest request) { //  Map<String, Object>
 		return employeeListService.getEmployeeListUsingScroll(request);
 		
 	}
 	
-		
+	@GetMapping("/employees/search.do")
+	public String search(HttpServletRequest request, Model model) {
+		employeeListService.getEmployeeListUsingSearch(request, model);
+		return "employees/search";
+	}
 }
