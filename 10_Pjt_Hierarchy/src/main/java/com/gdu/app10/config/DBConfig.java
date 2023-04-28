@@ -17,27 +17,28 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
-@MapperScan(basePackages= {"com.gdu.app10.mapper"})				// @mapper가 존재하는 클래스 패키지를 작성한다.
-@PropertySource(value = {"classpath:application.properties"})	// application.properties 파일의 속성을 읽어 오자!
-@EnableTransactionManagement	// 트랜젝션을 허용하겠다.
-@Configuration	//데이터베이스 접속에 관련된 빈을 생성 할 예정 // DriverManagerDataSource = hikari로 변경
+@MapperScan(basePackages={"com.gdu.app10.mapper"})           // @Mapper가 존재하는 패키지를 작성한다.
+@PropertySource(value={"classpath:application.properties"})  // application.properties 파일의 속성을 읽어 오자!
+@EnableTransactionManagement                                 // 트랜잭션 처리를 허용한다.
+@Configuration
 public class DBConfig {
-	
+
 	@Autowired
-	private Environment env;		//스프링이 가지고 있는 Bean(@PropertySource)
+	private Environment env;
 	
-	// HikariConfig Bean
+	// HikaryConfig Bean
 	@Bean
 	public HikariConfig hikariConfig() {
 		HikariConfig hikariConfig = new HikariConfig();
 		hikariConfig.setDriverClassName(env.getProperty("spring.datasource.hikari.driver-class-name"));
 		hikariConfig.setJdbcUrl(env.getProperty("spring.datasource.hikari.jdbc-url"));
 		hikariConfig.setUsername(env.getProperty("spring.datasource.hikari.username"));
-		hikariConfig.setPassword(env.getProperty("spring.datasource.hikari.password")); 
+		hikariConfig.setPassword(env.getProperty("spring.datasource.hikari.password"));
 		return hikariConfig;
 	}
+	
 	// HikariDataSource Bean
-	@Bean(destroyMethod = "close")
+	@Bean(destroyMethod="close")
 	public HikariDataSource hikariDataSource() {
 		return new HikariDataSource(hikariConfig());
 	}
@@ -52,8 +53,7 @@ public class DBConfig {
 		return bean.getObject();
 	}
 	
-	
-	// SqlSessionTemplate Bean(기존의 SqlSession)
+	// SqlSessionTemplate Bean
 	@Bean
 	public SqlSessionTemplate sqlSessionTemplate() throws Exception {
 		return new SqlSessionTemplate(sqlSessionFactory());
@@ -65,7 +65,4 @@ public class DBConfig {
 		return new DataSourceTransactionManager(hikariDataSource());
 	}
 	
-	
-	
-
 }

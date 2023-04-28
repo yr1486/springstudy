@@ -6,5 +6,7 @@ import org.springframework.ui.Model;
 
 public interface BbsService {
 	public void loadBbsList(HttpServletRequest request, Model model);
-	public int removeBbs(int BbsNO);
+	public int addBbs(HttpServletRequest request);
+	public int removeBbs(int bbsNo);
+	public int addReply(HttpServletRequest request); // id받아와야지.
 }
