@@ -32,7 +32,7 @@
 			}
 		}
 		
-		// 답글 달기  결과 메시지
+		// 답글 달기 결과 메시지
 		if('${addReplyResult}' != ''){
 			if('${addReplyResult}' == '1') {
 				alert('답글이 달렸습니다.');
@@ -51,12 +51,14 @@
 		
 		// 답글 작성 화면 표시/숨기기
 		$('.btn_reply').on('click', function(){
+
 			// 작성화면
 			let write = $(this).closest('.list').next();  // write는 jQuery객체이다. (jQuery wrapper가 필요 없다.)
+
 			// 작성화면이 blind를 가지고 있다 = 다른 작성화면이 열려 있다
 			if(write.hasClass('blind')){
 				
-				$('.write').addClass('blind');  // 모든 작성화면을 닫자 
+				$('.write').addClass('blind');  // 모든 작성화면을 닫자
 				write.removeClass('blind');     // 현재 작성화면을 열자
 				// 달라가 있는 라이트와 없는 라이트의 구분을 해야해. write =>  this 참고
 				
@@ -73,7 +75,6 @@
 <style>
 	.blind {
 		display: none;
-		
 	}
 </style>
 </head>
@@ -108,15 +109,12 @@
 							<td>
 								<!-- DEPTH에 의한 들여쓰기 -->
 								<c:forEach begin="1" end="${bbs.depth}" step="1">&nbsp;&nbsp;&nbsp;</c:forEach>
-							
-								<!-- 답글은 [Re] 표시하기 , 원글 제외하고 다 댓글이니까. -->
+								<!-- 답글은 [Re] 표시하기 -->
 								<c:if test="${bbs.depth > 0}">[Re]</c:if>
 								<!-- 제목 -->
 								${bbs.title}
-								
 								<!-- 답글작성하기 버튼 -->
 								<input type="button" value="답글" class="btn_reply">
-								
 							</td>
 							<td>${bbs.ip}</td>
 							<td>${bbs.createdAt}</td>
@@ -127,10 +125,8 @@
 								</form>
 							</td>
 						</tr>
-						
 						<!-- 답글 작성 화면 -->
-						
-						<tr class="write blind"> <!-- 클래스를 2개 줄 수 있음. 공백으로. 여기서의 블라인드역할 : 초기화 -->
+						<tr class="write blind">
 							<td colspan="6">
 								<form method="post" action="${contextPath}/bbs/reply/add.do">
 									<div>
@@ -143,14 +139,11 @@
 									</div>
 									<div>
 										<button>답글달기</button>
-										<!-- 원글의 depth, groupOrder를 함께 보낸다. -->
+										<!-- 원글의 depth, groupNo, groupOrder를 함께 보낸다. -->
 										<input type="hidden" name="depth" value="${bbs.depth}">
 										<input type="hidden" name="groupNo" value="${bbs.groupNo}">
-										<input type="hidden" name="groupOrder" value="${bbs.group.Order}">
-										
+										<input type="hidden" name="groupOrder" value="${bbs.groupOrder}">
 									</div>
-														
-								
 								</form>
 							</td>
 						</tr>
@@ -168,5 +161,4 @@
 	
 </body>
 </html>
-
 
