@@ -26,24 +26,23 @@ public class EmployeeController {
 		return "employees/pagination";
 	}
 	
-	@GetMapping("/employees/change/record.do") // .do안해도 되지만, .do하면 맵핑인걸 알아라.
+	@GetMapping("/employees/change/record.do")  // .do안해도 되지만, .do하면 맵핑인걸 알아라.
 	public String changeRecord(HttpSession session
-            					, HttpServletRequest request
-            					, @RequestParam(value="recordPerPage", required=false, defaultValue="10") int recordPerPage) { // @RequestParam 안쓰고 숨길수 있음
-			session.setAttribute("recordPerPage", recordPerPage);
-			return "redirect:" + request.getHeader("referer"); // 현재 주소(/employees/change/record.do)의 이전 주소(Referer)로 이동하시오.   //맵핑으로 가고싶을때쓰는거  리다이렉트    // 세션에 올리고나면 다시 목록을 펼치기로 함
+			                 , HttpServletRequest request
+			                 , @RequestParam(value="recordPerPage", required=false, defaultValue="10") int recordPerPage) {
+		session.setAttribute("recordPerPage", recordPerPage);
+		return "redirect:" + request.getHeader("referer");  // 현재 주소(/employees/change/record.do)의 이전 주소(Referer)로 이동하시오.
 	}
-
+	
 	@GetMapping("/employees/scroll.page")
 	public String scrollPage() {
 		return "employees/scroll";
 	}
 	
-	@ResponseBody //
+	@ResponseBody // 여기서 리턴하는 데이터가. 에이작으로 반환하는 데이터가 될 수 있도록 달아주는 애.
 	@GetMapping(value="/employees/scroll.do", produces="application/json") //이 맵을 json타입으로 잭슨이 바꿔줄거임.
 	public Map<String, Object> scroll(HttpServletRequest request) { //  Map<String, Object>
 		return employeeListService.getEmployeeListUsingScroll(request);
-		
 	}
 	
 	@GetMapping("/employees/search.do")
@@ -51,4 +50,38 @@ public class EmployeeController {
 		employeeListService.getEmployeeListUsingSearch(request, model);
 		return "employees/search";
 	}
+	
+	@ResponseBody // 여기서 리턴하는 데이터가. 에이작으로 반환하는 데이터가 될 수 있도록 달아주는 애.
+	@GetMapping(value="/employees/autoComplete.do", produces="application/json")
+	public Map<String, Object> autoComplete(HttpServletRequest request) {
+		return employeeListService.getAutoComplete(request);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

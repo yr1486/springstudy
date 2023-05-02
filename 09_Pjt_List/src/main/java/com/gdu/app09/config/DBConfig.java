@@ -17,21 +17,22 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
-@MapperScan(basePackages = {"com.gdu.app09.mapper"})
-@PropertySource(value={"classpath:application.properties"}) // 프로퍼티파일 읽어와라 (에플리케이션.프로퍼티스 파일의 속성일 읽어오자.
-						//     리소시스바로밑에만들어서 폴더이름 없이 바로 application~적었음.
-@EnableTransactionManagement // 트랜잭션 처리를 허용한다.
+@MapperScan(basePackages={"com.gdu.app09.mapper"})           // @Mapper가 존재하는 패키지를 작성한다.
+@PropertySource(value={"classpath:application.properties"})  // application.properties 파일의 속성을 읽어 오자! // 프로퍼티파일 읽어와라 (에플리케이션.프로퍼티스 파일의 속성일 읽어오자.
+                          //     리소시스바로밑에만들어서 폴더이름 없이 바로 application~적었음.
+@EnableTransactionManagement                                 // 트랜잭션 처리를 허용한다.
 @Configuration
 public class DBConfig {
 
 	@Autowired
-	private Environment env; 
+	private Environment env;
 	
+	// HikaryConfig Bean
 	// HidaryConfig Bean 
 	//애플리케이션에있는 설정값을 읽어오세요
 	//(디비) 프로퍼티를 분리하는 이유: gitignore안할라고 깃에 안올릴라고
 	@Bean
-	public HikariConfig hikariConfig() { // 얘는 커넥션풀에 속도를 높여주는애
+	public HikariConfig hikariConfig() { // // 얘는 커넥션풀에 속도를 높여주는애
 		HikariConfig hikariConfig = new HikariConfig();
 		hikariConfig.setDriverClassName(env.getProperty("spring.datasource.hikari.driver-class-name"));
 										//env.getProperty 가 ""를 읽어 옴. 그냥 히카리의 사용법임
@@ -39,8 +40,7 @@ public class DBConfig {
 		hikariConfig.setUsername(env.getProperty("spring.datasource.hikari.username"));
 		hikariConfig.setPassword(env.getProperty("spring.datasource.hikari.password"));
 		
-		return hikariConfig;
-		// 방금 만든 객체 반환.
+		return hikariConfig; 		// 방금 만든 객체 반환.
 	}
 	
 	// HikariDataSource Bean
@@ -49,18 +49,17 @@ public class DBConfig {
 		return new HikariDataSource(hikariConfig()); // 위에서 만든 메소드 호출
 	}
 	
-	// == ==> 커넥션 풀 끝
-	
 	// SqlSessionFactory Bean
 	@Bean
 	public SqlSessionFactory sqlSessionFactory() throws Exception {
 		SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
-		bean.setDataSource(hikariDataSource()); // 위에서 만든 메소드
+		bean.setDataSource(hikariDataSource());
 		bean.setConfigLocation(new PathMatchingResourcePatternResolver().getResource(env.getProperty("mybatis.config-location")));
 		bean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources(env.getProperty("mybatis.mapper-locations")));
 		return bean.getObject();
 	}
-	
+	// == ==> 커넥션 풀 끝
+	 
 	// SqlSessionTemplate Bean (기존의 SqlSessionFactory에서 이름이 달라진 것 )
 	@Bean
 	public SqlSessionTemplate sqlSessionTemplate() throws Exception {
@@ -77,16 +76,5 @@ public class DBConfig {
 	// 얘를 쓰기 위해 맨위에 @EnableTransactionManagement를 추가해줬음
 	
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 }

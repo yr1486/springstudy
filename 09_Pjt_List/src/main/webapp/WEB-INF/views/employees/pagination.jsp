@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
 <!DOCTYPE html>
 <html>
@@ -16,21 +16,19 @@
 		$('#recordPerPage').on('change', function(){
 			location.href = '${contextPath}/employees/change/record.do?recordPerPage=' + $(this).val();  // session에 recorePerPage 올리기
 		})
-		
-		// 세션에 저장된 recordPerPage 값으로 <select> 태그의 값을 세팅 // pageContext, request, session, application ==> attribute 저장 장소이며, 모두 el로 호출할 수 있다. 중요. 기억하기
-		
+		// 세션에 저장된 recordPerPage값으로 <select> 태그의 값을 세팅
 		let recordPerPage = '${sessionScope.recordPerPage}' == '' ? '10' : '${sessionScope.recordPerPage}';
 		$('#recordPerPage').val(recordPerPage);
+		
 		
 		// 제목을 클릭하면 정렬 방식을 바꿈
 		// 현재 정렬상태가(order) 어떤 상태인지. 무엇인지. 얘가 알고 있어야. 넘겨줄 수 있다. 오름인지 , 내림인지
 		// 해야 될 . 일을 넘기는거야. //  아래 테이블 테그에 data-order확인하기. data-order 속성값을꺼내는 애가 아래 data('')임 =>data('order')
 		// employee_list.xml 에 속성 order와 연결
 		$('.title').on('click', function(){
-				location.href = '${contextPath}/employees/pagination.do?column=' + $(this).data('column') + '&order=' + $(this).data('order') + "&page=${page}";
-			})
+			location.href = '${contextPath}/employees/pagination.do?column=' + $(this).data('column') + '&order=' + $(this).data('order') + "&page=${page}";
+		})
 	})
-	
 </script>
 <style>
 	.title {
@@ -74,6 +72,7 @@
 	<div>
 		<a href="${contextPath}/employees/search.do">사원 조회 화면으로 이동</a>
 	</div>
+	
 	<div>
 		<h1>사원 목록</h1>
 		<div>
@@ -84,7 +83,6 @@
 			</select>
 		</div>
 		<hr>
-		
 		<!-- 태그에 값을 저장시키는 방법 : data-속성 -->
 		<table border="1">
 			<thead>
@@ -103,11 +101,9 @@
 					<td><span class="title" data-column="D.DEPARTMENT_NAME" data-order="${order}">부서명</span></td>
 				</tr>
 			</thead>
-			
-			
 			<!-- 임플로이즈에서 하나씩꺼내서 var=emp라고 부르겠다. 인덱스를 쓰려면. var키워드를 써야함 -->
 			<!-- <td>${vs.employeeId}</td> 에서 employeeId 얘는 필드네임임.-->
-		<tbody>
+			<tbody>
 				<c:forEach items="${employees}" var="emp" varStatus="vs">
 					<tr>
 						<td>${beginNo - vs.index}</td>
@@ -125,8 +121,7 @@
 					</tr>
 				</c:forEach>
 			</tbody>
-			
-		<tfoot>
+			<tfoot>
 				<tr>
 					<td colspan="12">
 						${pagination}
