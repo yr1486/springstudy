@@ -23,7 +23,7 @@ import com.zaxxer.hikari.HikariDataSource;
 public class DBConfig {
 
 	@Autowired
-	private Environment env; // 이
+	private Environment env; 
 	
 	// HidaryConfig Bean 
 	//애플리케이션에있는 설정값을 읽어오세요

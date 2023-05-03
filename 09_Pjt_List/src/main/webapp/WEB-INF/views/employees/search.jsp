@@ -17,7 +17,7 @@
 		// recordPerPage의 변경
 		$('#column').on('change', function(){
 			$('#auto_complete').empty();
-			$('#query').val(''); // change 하면, 입력된게 지워지는거.
+			$('#query').val('');// change 하면, 입력된게 지워지는거.
 		})
 		
 		// 세션에 저장된 recordPerPage 값으로 <select> 태그의 값을 세팅 // pageContext, request, session, application ==> attribute 저장 장소이며, 모두 el로 호출할 수 있다. 중요. 기억하기
@@ -87,7 +87,6 @@
 				<option value="E.FIRST_NAME">FIRST_NAME</option>
 				<option value="E.PHONE_NUMBER">PHONE_NUMBER</option>
 				<option value="D.DEPARTMENT_NAME">DEPARTMENT_NAME</option>
-				
 			</select>
 			<input list="auto_complete" type="text" name="query" id="query">
 			<datalist id="auto_complete"></datalist>
@@ -95,8 +94,8 @@
 		</form>
 	</div>
 	
-		<hr>
-		
+	<hr>
+	
 	<div>
 		<table border="1">
 			<thead>

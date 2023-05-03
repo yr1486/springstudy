@@ -63,13 +63,14 @@
 		          FROM DEPARTMENTS D RIGHT OUTER JOIN EMPLOYEES E
 		            ON D.DEPARTMENT_ID = E.DEPARTMENT_ID
 		        <where>
-		        	<if test="column != '' and query !=''">
+		        	<if test="column != '' and query != ''">
 		        		${column} LIKE '%' || #{query} || '%'
 		        	</if>
 		        </where>) A
-		         WHERE A.RN BETWEEN #{begin} AND #{end}
-		        
+		 WHERE A.RN BETWEEN #{begin} AND #{end}
 	</select>
+	
+	
 	<!-- where 절에는 전달될 칼럼이 있을때, 하면됨. 
 	웨얼을 태그로 바꿈. -> if문: 칼럼이 들어있을때만. 해라.
 	태그 문법은 마이바티스 홈페이지 참고하자. 어려우니까. -->
@@ -86,31 +87,11 @@
 		</where>
 	</select>
 	
-	
-	<!-- DISTINCT ${column} : 중복 제거 -->
 	<select id="getAutoComplete" parameterType="Map" resultMap="EmpMap">
 		SELECT DISTINCT ${column}
           FROM DEPARTMENTS D RIGHT OUTER JOIN EMPLOYEES E
             ON D.DEPARTMENT_ID = E.DEPARTMENT_ID
-         WHERE ${column} LIKE CONCAT(UPPER(#{query}), '%')
+         WHERE ${column} LIKE CONCAT(#{query}, '%')
 	</select>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </mapper>

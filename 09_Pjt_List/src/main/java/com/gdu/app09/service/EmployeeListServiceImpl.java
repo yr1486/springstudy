@@ -178,31 +178,31 @@ public class EmployeeListServiceImpl implements EmployeeListService {
 		
 		// search.jsp로 전달할(forward)할 정보 저장하기
 		model.addAttribute("employees", employees);
-		model.addAttribute("pagination", pageUtil.getPagination(request.getContextPath() + "/employees/search.do"  + column + "&query=" + query));
+		model.addAttribute("pagination", pageUtil.getPagination(request.getContextPath() + "/employees/search.do?column=" + column + "&query=" + query));
 		model.addAttribute("beginNo", totalRecord - (page - 1) * recordPerPage);
 		
 	}
 	
 	@Override
 	public Map<String, Object> getAutoComplete(HttpServletRequest request) {
-	
+		
 		// 파라미터 column이 전달되지 않는 경우 column=""로 처리한다. (검색할 칼럼)
 		Optional<String> opt1 = Optional.ofNullable(request.getParameter("column"));
 		String column = opt1.orElse("");
-
+		
 		// 파라미터 query가 전달되지 않는 경우 query=""로 처리한다. (검색어)
 		Optional<String> opt2 = Optional.ofNullable(request.getParameter("query"));
 		String query = opt2.orElse("");
-
+		
 		// DB로 보낼 Map 만들기(column + query)
 		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("column", column);
 		map.put("query", query);
-
-		//  검색 결과 목록 가져오기.
+		
+		// 검색 결과 목록 가져오기
 		List<EmpDTO> employees = employeeListMapper.getAutoComplete(map);
 		
-		// scroll.jsp로 응답할 데이터 // 목록만 담아서 간다.
+		// search.jsp로 응답할 데이터
 		Map<String, Object> resultMap = new HashMap<String, Object>();
 		resultMap.put("employees", employees);
 		
@@ -210,22 +210,5 @@ public class EmployeeListServiceImpl implements EmployeeListService {
 		return resultMap;
 		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 }

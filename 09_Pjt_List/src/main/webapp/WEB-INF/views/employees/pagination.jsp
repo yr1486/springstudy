@@ -11,15 +11,14 @@
 <title>Insert title here</title>
 <script src="${contextPath}/resources/js/lib/jquery-3.6.4.min.js"></script>
 <script>
-	$(function(){
-		// recordPerPage의 변경
-		$('#recordPerPage').on('change', function(){
-			location.href = '${contextPath}/employees/change/record.do?recordPerPage=' + $(this).val();  // session에 recorePerPage 올리기
-		})
+$(function(){
+	// recordPerPage의 변경
+	$('#recordPerPage').on('change', function(){
+		location.href = '${contextPath}/employees/change/record.do?recordPerPage=' + $(this).val();  // session에 recorePerPage 올리기
+	})
 		// 세션에 저장된 recordPerPage값으로 <select> 태그의 값을 세팅
 		let recordPerPage = '${sessionScope.recordPerPage}' == '' ? '10' : '${sessionScope.recordPerPage}';
-		$('#recordPerPage').val(recordPerPage);
-		
+		$('#recordPerPage').val(recordPerPage);	
 		
 		// 제목을 클릭하면 정렬 방식을 바꿈
 		// 현재 정렬상태가(order) 어떤 상태인지. 무엇인지. 얘가 알고 있어야. 넘겨줄 수 있다. 오름인지 , 내림인지
@@ -30,6 +29,7 @@
 		})
 	})
 </script>
+
 <style>
 	.title {
 		cursor: pointer;
@@ -68,13 +68,8 @@
 </head>
 <body>
 <!-- 페이지 목록 만들어 주는 걸 페이지네이션이라고 함. pagination.jsp  -->
-
 	<div>
-		<a href="${contextPath}/employees/search.do">사원 조회 화면으로 이동</a>
-	</div>
-	
-	<div>
-		<h1>사원 목록</h1>
+		<h1>사원 전체 목록</h1>
 		<div>
 			<select id="recordPerPage">
 				<option value="10">10개</option>
@@ -124,7 +119,7 @@
 			<tfoot>
 				<tr>
 					<td colspan="12">
-						${pagination}
+							${pagination}
 					</td>
 				</tr>
 			</tfoot>
