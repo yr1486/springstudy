@@ -1,11 +1,26 @@
 package com.gdu.app11.util;
 
+import java.io.File;
+import java.time.LocalDate;
 import java.util.UUID;
+import java.util.regex.Matcher;
 
 import org.springframework.stereotype.Component;
 
 @Component
 public class MyFileUtil {
+	
+	// 경로 구분자
+	private String sep = Matcher.quoteReplacement(File.separator);
+	
+	// String path 만들기
+	public String getPath() {
+		LocalDate now = LocalDate.now();
+		return "/storage" + sep + now.getYear() + sep + String.format("%02d", now.getMonthValue()) + sep + String.format("%02d", now.getDayOfMonth());
+		// 실제로 만들어 지는 경로 가 루트/storage/2023/05/08
+		// 저장되는 경로는 현재 날짜 기준으로 만들었음.
+		
+	}
 
 	// String filesystemName 만들기
 	public String getFilesystemName(String originName) { // 원래이름의 확장자를 알아야해서. 이름을 받아와야해
@@ -30,9 +45,38 @@ public class MyFileUtil {
 		// 결과 반환
 		// UUID.exeName
 		// replace는 지울 수 있는 메소드
+		// 이름의 중복이 없어야하고 인코딩 해줘야하고.
 		return UUID.randomUUID().toString().replace("-", "") + "." + extName; // 하이푼이 제거된 uuid값에 확장자를 붙여줬음.
 			
 	}
 	
 	
+	// String tempPath 만들기
+	public String getTempPath() {
+		return "/storage" + sep + "temp";
+	}
+	
+	// 이름의 중복이 없어야하고 인코딩 해줘야하고.
+	
+	// String tempfileName 만들기 (zip 파일)
+	public String getTempfileName() {
+		return  UUID.randomUUID().toString().replace("-", "") + ".zip";
+	}
+	
+	
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
