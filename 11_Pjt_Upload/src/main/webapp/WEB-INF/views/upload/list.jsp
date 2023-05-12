@@ -17,8 +17,11 @@
 		<a href="${contextPath}/upload/write.do">게시글 작성하러 가기</a>
 	</div>
 	
+	<hr>
+	
 	<div>
 		<table border="1">
+			<caption>${pagination}</caption>
 			<thead>
 				<tr>
 					<td>UPLOAD게시글번호</td>
@@ -38,7 +41,6 @@
 				</c:forEach>
 			</tbody>
 		</table>
-	
 	</div>
 	
 </body>

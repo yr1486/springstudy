@@ -90,7 +90,13 @@
 		 WHERE UPLOAD_NO = #{uploadNo}
 	</delete>
 	
-	
+	<!-- 받아오는게 없지만, 돌려줄건 있어. -->
+	<select id="getAttachListInYesterDay" resultType="AttachDTO">
+	    SELECT ATTACH_NO, PATH, ORIGIN_NAME, FILESYSTEM_NAME, DOWNLOAD_COUNT, HAS_THUMBNAIL, UPLOAD_NO
+		  FROM ATTACH
+		 WHERE PATH LIKE CONCAT('%', TO_CHAR(SYSDATE - 1, 'YYYY\\MM\\DD')
+	</select>
+	<!-- 날짜만 같으면 되는걸로 -->
 	
 	
 	

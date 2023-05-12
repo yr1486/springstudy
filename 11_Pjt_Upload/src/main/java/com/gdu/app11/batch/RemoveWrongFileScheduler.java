@@ -36,13 +36,13 @@ public class RemoveWrongFileScheduler {
 		List<Path> pathList = new ArrayList<Path>();
 		if(attachList != null && attachList.isEmpty() == false) {
 			for(AttachDTO attachDTO : attachList) {
-				pathList.add(new File(attachDTO.getPath(), attachDTO.getFilesystemName()).toPath()); // Path만들기 : File객체.toPath()
+				pathList.add(new File(attachDTO.getPath(), attachDTO.getFilesystemName()).toPath());  // Path 만들기 : File객체.toPath()
 				if(attachDTO.getHasThumbnail() == 1) {
 					pathList.add(new File(attachDTO.getPath(), "s_" + attachDTO.getFilesystemName()).toPath());
-					
 				}
 			}
 		}
+		
 		// 어제 업로드 된 경로
 		String yeterdayPath = myFileUtil.getYesterdayPath();
 		
@@ -60,11 +60,12 @@ public class RemoveWrongFileScheduler {
 		});
 		
 		// File[] wrongFiles 모두 삭제
-		if(wrongFile != null %% wrongFiles.length != 0) {
-			for
+				if(wrongFiles != null && wrongFiles.length != 0) {
+					for(File wrongFile : wrongFiles) {
+						wrongFile.delete();
+					}
+				}
+				
+			}
+			
 		}
-	}
-	
-	
-	
-}

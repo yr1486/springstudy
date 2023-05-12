@@ -11,4 +11,5 @@ public interface StaffMapper {
 	
 	public List<StaffDTO> getStaffList();
 	public int addStaff(StaffDTO staffDTO);
+	public List<StaffDTO> getSearchList();
 }

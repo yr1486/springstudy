@@ -27,16 +27,6 @@ public class StaffServiceImpl implements StaffService {
 		return staffList;
 	}
 	
-	
-	@Override
-	public ResponseEntity<List<StaffDTO>> getStaffList2() {
-		List<StaffDTO> staffList = staffMapper.getStaffList();
-		HttpHeaders header = new HttpHeaders();
-		header.setContentType(MediaType.APPLICATION_JSON);
-		return new ResponseEntity<List<StaffDTO>>(staffList, header, HttpStatus.OK);
-	}
-
-
 	@Override
 	public String addStaff1(HttpServletRequest request) {
 		try {
@@ -55,14 +45,10 @@ public class StaffServiceImpl implements StaffService {
 	}
 	
 	@Override
-	public ResponseEntity<String> addStaff2(StaffDTO staffDTO) {
-		try {
-			staffMapper.addStaff(staffDTO); 
-			return new ResponseEntity<String>("사원 등록이 성공했습니다.", HttpStatus.OK);
-		}catch(Exception e) {
-			return new ResponseEntity<String>("사원 등록이 실패했습니다.", HttpStatus.INTERNAL_SERVER_ERROR);
-			
-		}
+	public List<StaffDTO> getSearchList() {
+		// 매퍼로부터 결과 받아오기.
+		List<StaffDTO> searchList = staffMapper.getStaffList();
+		return searchList;
 	}
 
 

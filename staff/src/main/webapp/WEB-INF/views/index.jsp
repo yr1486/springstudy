@@ -70,6 +70,28 @@
       })
    }
    
+   function fnSearch(){
+	      $.ajax({
+	         type: 'get',
+	         url: '${contextPath}/search.json',
+	         dataType: 'json',
+	         success: function(resData){  
+	         $('#staffList').empty();   
+	         $.each(resData, function(i, staff){
+	               let str ='<tr>';
+	               str += '<td>' + staff.sno;   
+	               str += '<td>' + staff.name;   
+	               str += '<td>' + staff.dept;   
+	               str += '<td>' + staff.salary;   
+	               $('#staffList').append(str);
+	            })
+	         },
+	         error: function(jqXHR){ 
+	             alert(jqXHR.responseText);
+	          }
+	      })
+	   }
+   
 </script>
 </head>
 <body>
