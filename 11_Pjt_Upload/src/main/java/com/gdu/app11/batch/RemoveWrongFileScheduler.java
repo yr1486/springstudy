@@ -30,7 +30,7 @@ public class RemoveWrongFileScheduler {
 	public void execute() { // 메소드명은 아무 의미 없다.
 		
 		// 어제 업로드 된 첨부 파일들의 정보(DB에서 가져오기 // 맵퍼작업하기)
-		List<AttachDTO> attachList = uploadMapper.getAttachListInYesterDay();
+		List<AttachDTO> attachList = uploadMapper.getAttachListInYesterday();
 		
 		// List<attachDTO> -> List<Path>로 번환하기
 		List<Path> pathList = new ArrayList<Path>();

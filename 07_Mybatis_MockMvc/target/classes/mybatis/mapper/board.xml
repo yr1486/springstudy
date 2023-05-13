@@ -38,10 +38,20 @@
 
 
 	<insert id="insertBoard" parameterType="Board">
-		INSERT INTO BOARD 
-			(BOARD_NO, TITLE, CONTENT, WRITER, CREATED_AT, MODIFIED_AT)
-		VALUES
-			(BOARD_SEQ.NEXTVAL, #{title}, #{content}, #{writer}, TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS'), TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS'))
+		INSERT INTO BOARD(
+		    BOARD_NO
+		  , TITLE
+		  , CONTENT
+		  , WRITER
+		  , CREATED_AT
+		  , MODIFIED_AT
+		) VALUES (
+		    BOARD_SEQ.NEXTVAL
+		  , #{title}
+		  , #{content}
+	    , #{writer}
+	    , TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS')
+	    , TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS'))
 	</insert>
 	<!-- 파라미터타입 객체, 안에 샵은 필드이름 ==> BoardDTO보고 적기 카멜케이스방법으로. 소문자로적어야해 -->
 
