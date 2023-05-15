@@ -88,8 +88,7 @@
       FROM ATTACH
      WHERE UPLOAD_NO = #{uploadNo}
   </select>
-	
-	
+
   <select id="getAttachByNo" parameterType="int" resultType="AttachDTO">
     SELECT ATTACH_NO, PATH, ORIGIN_NAME, FILESYSTEM_NAME, DOWNLOAD_COUNT, HAS_THUMBNAIL, UPLOAD_NO
       FROM ATTACH
@@ -102,13 +101,13 @@
        SET DOWNLOAD_COUNT = DOWNLOAD_COUNT + 1
      WHERE ATTACH_NO = #{attachNo}
   </update>
-	
+
   <delete id="removeUpload" parameterType="int">
     DELETE
       FROM UPLOAD
      WHERE UPLOAD_NO = #{uploadNo}
   </delete>
-  
+
   <update id="modifyUpload" parameterType="UploadDTO">
     UPDATE UPLOAD
        SET UPLOAD_TITLE = #{uploadTitle}
@@ -117,7 +116,7 @@
      WHERE UPLOAD_NO = #{uploadNo}
   </update>
   
-  <delete id="removeAttach" parameterType="int">
+ <delete id="removeAttach" parameterType="int">
     DELETE
       FROM ATTACH
      WHERE ATTACH_NO = #{attachNo}
