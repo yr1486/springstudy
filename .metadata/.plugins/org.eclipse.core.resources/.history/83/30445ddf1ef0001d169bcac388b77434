@@ -1,0 +1,42 @@
+package com.gdu.semi.mapper;
+
+import java.util.List;
+import java.util.Map;
+
+import com.gdu.semi.domain.AttachDTO;
+import com.gdu.semi.domain.CsDTO;
+
+//@Mapper
+public interface CsMapper {
+	
+	// getUploadList
+	public int getCsCount();
+	public List<CsDTO> getUploadList(Map<String, Object> map);
+	
+	// addUpload
+	public int addCs(CsDTO csDTO);
+	public int addAttach(AttachDTO attachDTO);
+	
+	// getUploadByNo
+	public CsDTO getCsByNo(int csNo);
+	public List<AttachDTO> getAttachList(int csNo);
+	
+	// display, download
+	public AttachDTO getAttachByNo(int attachNo);
+	
+	// download
+	public int increaseDownloadCount(int attachNo);
+	
+	// downloadAll
+	// public List<AttachDTO> getAttachList(int uploadNo);
+	
+	// removeUpload
+	public int removeCs(int csNo);
+	
+	//RemoveWrongfileScheduler
+	public List<AttachDTO> getAttachListInYesterDay();
+
+	
+	
+	
+}

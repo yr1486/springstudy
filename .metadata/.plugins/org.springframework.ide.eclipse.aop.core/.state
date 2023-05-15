@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="Semi"/>
+<aop-project name="09_Pjt_List"/>
+<aop-project name="05_Dbcp_Logback"/>
+<aop-project name="staff2"/>
+<aop-project name="04_Jdbc_JUnit"/>
+<aop-project name="03_Ajax"/>
+<aop-project name="10_Pjt_Hierarchy"/>
+<aop-project name="07_Mybatis_MockMvc"/>
+<aop-project name="02_Mvc"/>
+<aop-project name="01_IoC_Container"/>
+<aop-project name="08_Mybatis_Batch"/>
+<aop-project name="11_Pjt_Upload"/>
+<aop-project name="staff"/>
+</aop-reference-model>

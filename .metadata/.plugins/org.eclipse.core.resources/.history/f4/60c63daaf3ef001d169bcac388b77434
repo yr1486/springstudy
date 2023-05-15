@@ -1,0 +1,21 @@
+package com.gdu.semi.domain;
+
+import java.sql.Timestamp;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class CsDTO {
+	
+	private int csNo;
+	private String cstitle;
+	private String cswriter;
+	private String cscontent;
+	private Timestamp createdAt;
+	private Timestamp modifiedAt;
+	private int csHits;
+}

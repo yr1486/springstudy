@@ -1,0 +1,5 @@
+package com.gdu.app12.domain;
+
+public class UserDTO {
+
+}

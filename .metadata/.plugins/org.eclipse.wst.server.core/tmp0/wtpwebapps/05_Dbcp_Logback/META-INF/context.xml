@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+
+	<!-- Oracle XE -->
+	<!-- 나중에 DB가 바뀌면 이 아래의 정보를 바꾸는 거임 ex> mysql이다 그럴때.  -->
+	<Resource
+		auth="Container"
+		name="jdbc/GDJ61"
+		type="javax.sql.DataSource"
+		driverClassName="oracle.jdbc.OracleDriver"
+		url="jdbc:oracle:thin:@localhost:1521:xe"
+		username="GDJ61"
+		password="1111"
+		maxTotal="8"
+		maxIdle="8"
+		maxWaitMillis="-1" />
+		<!-- 
+		-1은 제한없음. 무한정 기다릴 수 있음.
+		이따가 이 코드를 읽는거 작성할거임  -->
+	
+ 
+</Context>

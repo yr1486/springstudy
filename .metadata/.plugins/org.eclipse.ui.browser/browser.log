@@ -1,0 +1,406 @@
+
+4월 12, 2023 09:50:58.286 NEW SESSION
+4월 12, 2023 09:50:58.286 [11424:13140:0412/095058.284:ERROR:device_event_log_impl.cc(222)] [09:50:58.285] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 12, 2023 09:50:58.287 [11424:13140:0412/095058.284:ERROR:device_event_log_impl.cc(222)] [09:50:58.285] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 12, 2023 09:50:59.13 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 12, 2023 11:42:52.252 [19532:25720:0412/114252.251:ERROR:device_event_log_impl.cc(222)] [11:42:52.251] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 12, 2023 11:42:52.254 [19532:25720:0412/114252.251:ERROR:device_event_log_impl.cc(222)] [11:42:52.252] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 12, 2023 11:42:52.810 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 12, 2023 12:49:31.476 [19532:5372:0412/124931.475:ERROR:connection_factory_impl.cc(473)] ConnectionHandler failed with net error: -2
+4월 12, 2023 12:49:45.100 [19532:5372:0412/124945.098:ERROR:connection_factory_impl.cc(473)] ConnectionHandler failed with net error: -2
+4월 12, 2023 12:49:46.237 [19532:5372:0412/124946.236:ERROR:connection_factory_impl.cc(473)] ConnectionHandler failed with net error: -2
+4월 12, 2023 17:14:53.563 [19532:25720:0412/171453.563:ERROR:interface_endpoint_client.cc(695)] Message 0 rejected by interface blink.mojom.WidgetHost
+
+4월 13, 2023 09:45:07.454 NEW SESSION
+4월 13, 2023 09:45:07.454 [5040:26444:0413/094507.450:ERROR:device_event_log_impl.cc(222)] [09:45:07.451] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 13, 2023 09:45:07.456 [5040:26444:0413/094507.451:ERROR:device_event_log_impl.cc(222)] [09:45:07.451] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 13, 2023 09:45:08.353 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 13, 2023 14:35:17.492 [5040:20296:0413/143517.491:ERROR:mcs_client.cc(750)] Received close command, resetting connection.
+
+4월 14, 2023 09:43:03.120 NEW SESSION
+4월 14, 2023 09:43:03.120 [4796:24200:0414/094303.118:ERROR:device_event_log_impl.cc(222)] [09:43:03.119] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 14, 2023 09:43:03.121 [4796:24200:0414/094303.118:ERROR:device_event_log_impl.cc(222)] [09:43:03.119] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 14, 2023 09:43:04.292 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 14, 2023 15:30:35.889 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+4월 14, 2023 15:30:39.203 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+4월 14, 2023 15:31:04.369 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+4월 14, 2023 15:31:13.929 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+4월 14, 2023 15:31:18.786 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+4월 14, 2023 18:55:13.721 [4796:3560:0414/185513.719:ERROR:connection_factory_impl.cc(473)] ConnectionHandler failed with net error: -2
+4월 14, 2023 18:55:13.799 [4796:3560:0414/185513.797:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+4월 14, 2023 18:55:22.424 [4796:3560:0414/185522.423:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+4월 14, 2023 18:56:03.160 [4796:3560:0414/185603.159:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+4월 14, 2023 18:57:36.411 [4796:3560:0414/185736.410:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+4월 14, 2023 19:01:23.637 [4796:3560:0414/190123.636:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+4월 14, 2023 19:06:51.200 [4796:3560:0414/190651.199:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+4월 14, 2023 19:16:51.214 [4796:3560:0414/191651.213:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+4월 14, 2023 19:26:51.242 [4796:3560:0414/192651.242:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+4월 14, 2023 19:36:51.274 [4796:3560:0414/193651.274:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+4월 14, 2023 20:21:54.68 [4796:24200:0414/202154.066:ERROR:interface_endpoint_client.cc(695)] Message 5 rejected by interface blink.mojom.WidgetHost
+
+4월 18, 2023 09:23:07.23 NEW SESSION
+4월 18, 2023 09:23:07.23 [6740:7652:0418/092307.018:ERROR:device_event_log_impl.cc(222)] [09:23:07.018] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 18, 2023 09:23:07.25 [6740:7652:0418/092307.018:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 1.
+4월 18, 2023 09:23:07.27 [6740:7652:0418/092307.018:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 2.
+4월 18, 2023 09:23:07.28 [6740:7652:0418/092307.018:ERROR:usb_descriptors.cc(100)] Failed to read all configuration descriptors. Expected 3, got 1.
+4월 18, 2023 09:23:07.28 [6740:7652:0418/092307.018:ERROR:device_event_log_impl.cc(222)] [09:23:07.018] USB: usb_device_win.cc:95 Failed to read descriptors from \\?\usb#vid_0bda&pid_8156#401000001#{a5dcbf10-6530-11d2-901f-00c04fb951ed}.
+4월 18, 2023 09:23:07.28 [6740:7652:0418/092307.019:ERROR:device_event_log_impl.cc(222)] [09:23:07.018] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 18, 2023 09:23:07.30 [6740:7652:0418/092307.020:ERROR:device_event_log_impl.cc(222)] [09:23:07.019] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 18, 2023 09:23:07.31 [6740:7652:0418/092307.021:ERROR:device_event_log_impl.cc(222)] [09:23:07.021] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 18, 2023 09:23:08.662 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 18, 2023 13:32:31.471 [6740:7652:0418/133231.469:ERROR:device_event_log_impl.cc(222)] [13:32:31.469] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+4월 18, 2023 13:32:31.478 [6740:7652:0418/133231.477:ERROR:device_event_log_impl.cc(222)] [13:32:31.477] USB: usb_service_win.cc:307 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)
+4월 18, 2023 13:44:18.500 [6740:7652:0418/134418.499:ERROR:device_event_log_impl.cc(222)] [13:44:18.499] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+4월 18, 2023 13:44:18.507 [6740:7652:0418/134418.505:ERROR:device_event_log_impl.cc(222)] [13:44:18.506] USB: usb_service_win.cc:307 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)
+4월 18, 2023 14:11:03.453 [25952:26988:0418/141103.452:ERROR:device_event_log_impl.cc(222)] [14:11:03.452] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 18, 2023 14:11:03.454 [25952:26988:0418/141103.452:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 1.
+4월 18, 2023 14:11:03.454 [25952:26988:0418/141103.452:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 2.
+4월 18, 2023 14:11:03.455 [25952:26988:0418/141103.453:ERROR:usb_descriptors.cc(100)] Failed to read all configuration descriptors. Expected 3, got 1.
+4월 18, 2023 14:11:03.457 [25952:26988:0418/141103.453:ERROR:device_event_log_impl.cc(222)] [14:11:03.452] USB: usb_device_win.cc:95 Failed to read descriptors from \\?\usb#vid_0bda&pid_8156#401000001#{a5dcbf10-6530-11d2-901f-00c04fb951ed}.
+4월 18, 2023 14:11:03.457 [25952:26988:0418/141103.453:ERROR:device_event_log_impl.cc(222)] [14:11:03.453] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 18, 2023 14:11:03.458 [25952:26988:0418/141103.454:ERROR:device_event_log_impl.cc(222)] [14:11:03.453] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 18, 2023 14:11:03.461 [25952:26988:0418/141103.461:ERROR:device_event_log_impl.cc(222)] [14:11:03.460] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 18, 2023 14:11:04.945 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 18, 2023 14:11:51.498 [31232:18952:0418/141151.497:ERROR:device_event_log_impl.cc(222)] [14:11:51.497] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 18, 2023 14:11:51.499 [31232:18952:0418/141151.498:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 1.
+4월 18, 2023 14:11:51.500 [31232:18952:0418/141151.498:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 2.
+4월 18, 2023 14:11:51.501 [31232:18952:0418/141151.498:ERROR:usb_descriptors.cc(100)] Failed to read all configuration descriptors. Expected 3, got 1.
+4월 18, 2023 14:11:51.502 [31232:18952:0418/141151.498:ERROR:device_event_log_impl.cc(222)] [14:11:51.498] USB: usb_device_win.cc:95 Failed to read descriptors from \\?\usb#vid_0bda&pid_8156#401000001#{a5dcbf10-6530-11d2-901f-00c04fb951ed}.
+4월 18, 2023 14:11:51.502 [31232:18952:0418/141151.498:ERROR:device_event_log_impl.cc(222)] [14:11:51.498] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 18, 2023 14:11:51.503 [31232:18952:0418/141151.499:ERROR:device_event_log_impl.cc(222)] [14:11:51.499] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 18, 2023 14:11:51.503 [31232:18952:0418/141151.500:ERROR:device_event_log_impl.cc(222)] [14:11:51.500] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 18, 2023 14:11:52.93 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+4월 26, 2023 14:24:15.937 NEW SESSION
+4월 26, 2023 14:24:15.937 [38828:8164:0426/142415.934:ERROR:device_event_log_impl.cc(222)] [14:24:15.935] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 26, 2023 14:24:15.939 [38828:8164:0426/142415.934:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 1.
+4월 26, 2023 14:24:15.939 [38828:8164:0426/142415.935:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 2.
+4월 26, 2023 14:24:15.940 [38828:8164:0426/142415.935:ERROR:usb_descriptors.cc(100)] Failed to read all configuration descriptors. Expected 3, got 1.
+4월 26, 2023 14:24:15.940 [38828:8164:0426/142415.935:ERROR:device_event_log_impl.cc(222)] [14:24:15.935] USB: usb_device_win.cc:95 Failed to read descriptors from \\?\usb#vid_0bda&pid_8156#401000001#{a5dcbf10-6530-11d2-901f-00c04fb951ed}.
+4월 26, 2023 14:24:15.940 [38828:8164:0426/142415.935:ERROR:device_event_log_impl.cc(222)] [14:24:15.935] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 26, 2023 14:24:15.941 [38828:8164:0426/142415.935:ERROR:device_event_log_impl.cc(222)] [14:24:15.936] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 26, 2023 14:24:15.941 [38828:8164:0426/142415.936:ERROR:device_event_log_impl.cc(222)] [14:24:15.937] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 26, 2023 14:24:17.233 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 26, 2023 14:54:31.600 [38828:3884:0426/145255.078:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+4월 26, 2023 15:04:52.272 [38828:8164:0426/150452.271:ERROR:device_event_log_impl.cc(222)] [15:04:52.271] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+4월 26, 2023 15:58:30.491 [38828:3884:0426/155755.048:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+4월 26, 2023 16:35:49.474 [38828:8164:0426/163549.473:ERROR:device_event_log_impl.cc(222)] [16:35:49.473] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+4월 26, 2023 17:12:12.996 [38828:8164:0426/171212.995:ERROR:device_event_log_impl.cc(222)] [17:12:12.995] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+4월 26, 2023 17:12:12.999 [38828:8164:0426/171212.998:ERROR:device_event_log_impl.cc(222)] [17:12:12.998] USB: usb_service_win.cc:307 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)
+4월 27, 2023 09:01:21.804 [38828:3884:0426/174553.982:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+4월 27, 2023 09:01:22.114 [38828:3884:0427/090122.114:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 27, 2023 09:03:23.93 [38828:8164:0427/090323.091:ERROR:device_event_log_impl.cc(222)] [09:03:23.091] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+
+4월 27, 2023 16:27:32.141 NEW SESSION
+4월 27, 2023 16:27:32.141 [11288:3844:0427/162732.138:ERROR:device_event_log_impl.cc(222)] [16:27:32.138] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 27, 2023 16:27:32.142 [11288:3844:0427/162732.138:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 1.
+4월 27, 2023 16:27:32.143 [11288:3844:0427/162732.139:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 2.
+4월 27, 2023 16:27:32.144 [11288:3844:0427/162732.139:ERROR:usb_descriptors.cc(100)] Failed to read all configuration descriptors. Expected 3, got 1.
+4월 27, 2023 16:27:32.144 [11288:3844:0427/162732.139:ERROR:device_event_log_impl.cc(222)] [16:27:32.138] USB: usb_device_win.cc:95 Failed to read descriptors from \\?\usb#vid_0bda&pid_8156#401000001#{a5dcbf10-6530-11d2-901f-00c04fb951ed}.
+4월 27, 2023 16:27:32.144 [11288:3844:0427/162732.139:ERROR:device_event_log_impl.cc(222)] [16:27:32.138] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 27, 2023 16:27:32.145 [11288:3844:0427/162732.142:ERROR:device_event_log_impl.cc(222)] [16:27:32.141] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 27, 2023 16:27:32.145 [11288:3844:0427/162732.142:ERROR:device_event_log_impl.cc(222)] [16:27:32.141] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 27, 2023 16:27:32.510 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 27, 2023 16:27:46.643 [11288:3844:0427/162746.643:ERROR:device_event_log_impl.cc(222)] [16:27:46.643] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+4월 27, 2023 16:52:26.513 [11288:3844:0427/165226.512:ERROR:device_event_log_impl.cc(222)] [16:52:26.512] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+4월 27, 2023 16:52:26.543 [11288:3844:0427/165226.542:ERROR:device_event_log_impl.cc(222)] [16:52:26.543] USB: usb_service_win.cc:307 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)
+4월 27, 2023 17:11:25.612 [11288:3844:0427/171125.611:ERROR:device_event_log_impl.cc(222)] [17:11:25.610] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+4월 27, 2023 17:35:18.813 [11288:3844:0427/173518.813:ERROR:device_event_log_impl.cc(222)] [17:35:18.812] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+4월 27, 2023 17:35:18.828 [11288:3844:0427/173518.827:ERROR:device_event_log_impl.cc(222)] [17:35:18.827] USB: usb_service_win.cc:307 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)
+
+5월 02, 2023 20:40:38.862 NEW SESSION
+5월 02, 2023 20:40:38.862 [3308:5508:0502/204038.860:ERROR:device_event_log_impl.cc(222)] [20:40:38.860] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+5월 02, 2023 20:40:38.863 [3308:5508:0502/204038.860:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 1.
+5월 02, 2023 20:40:38.863 [3308:5508:0502/204038.860:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 2.
+5월 02, 2023 20:40:38.863 [3308:5508:0502/204038.860:ERROR:usb_descriptors.cc(100)] Failed to read all configuration descriptors. Expected 3, got 1.
+5월 02, 2023 20:40:38.863 [3308:5508:0502/204038.860:ERROR:device_event_log_impl.cc(222)] [20:40:38.860] USB: usb_device_win.cc:95 Failed to read descriptors from \\?\usb#vid_0bda&pid_8156#401000001#{a5dcbf10-6530-11d2-901f-00c04fb951ed}.
+5월 02, 2023 20:40:38.864 [3308:5508:0502/204038.860:ERROR:device_event_log_impl.cc(222)] [20:40:38.860] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+5월 02, 2023 20:40:38.864 [3308:5508:0502/204038.863:ERROR:device_event_log_impl.cc(222)] [20:40:38.862] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+5월 02, 2023 20:40:38.864 [3308:5508:0502/204038.863:ERROR:device_event_log_impl.cc(222)] [20:40:38.863] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+5월 02, 2023 20:40:40.193 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+5월 02, 2023 20:41:10.858 [9068:13932:0502/204110.858:ERROR:device_event_log_impl.cc(222)] [20:41:10.858] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+5월 02, 2023 20:41:10.859 [9068:13932:0502/204110.858:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 1.
+5월 02, 2023 20:41:10.859 [9068:13932:0502/204110.858:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 2.
+5월 02, 2023 20:41:10.859 [9068:13932:0502/204110.858:ERROR:usb_descriptors.cc(100)] Failed to read all configuration descriptors. Expected 3, got 1.
+5월 02, 2023 20:41:10.859 [9068:13932:0502/204110.858:ERROR:device_event_log_impl.cc(222)] [20:41:10.858] USB: usb_device_win.cc:95 Failed to read descriptors from \\?\usb#vid_0bda&pid_8156#401000001#{a5dcbf10-6530-11d2-901f-00c04fb951ed}.
+5월 02, 2023 20:41:10.859 [9068:13932:0502/204110.858:ERROR:device_event_log_impl.cc(222)] [20:41:10.858] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+5월 02, 2023 20:41:10.860 [9068:13932:0502/204110.860:ERROR:device_event_log_impl.cc(222)] [20:41:10.860] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+5월 02, 2023 20:41:10.860 [9068:13932:0502/204110.860:ERROR:device_event_log_impl.cc(222)] [20:41:10.860] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+5월 02, 2023 20:41:11.38 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+5월 02, 2023 22:08:48.295 [9068:13932:0502/220848.295:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+5월 02, 2023 22:18:20.728 [9068:14296:0502/221820.727:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+5월 02, 2023 22:41:24.206 [9068:14296:0502/224124.206:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+5월 02, 2023 22:42:29.692 [9068:14296:0502/224229.692:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+5월 03, 2023 10:32:16.531 [9068:14296:0503/103216.530:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+5월 03, 2023 10:32:21.36 [9068:14296:0503/103221.036:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+5월 03, 2023 10:56:44.996 [9068:14296:0503/105644.996:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+5월 03, 2023 11:58:22.833 [9068:14296:0503/115822.832:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+5월 03, 2023 13:17:02.790 [9068:14296:0503/131702.789:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+5월 03, 2023 15:01:22.609 [9068:14296:0503/150122.609:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -103
+5월 03, 2023 15:16:22.969 [16696:2884:0503/151622.968:ERROR:device_event_log_impl.cc(222)] [15:16:22.968] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+5월 03, 2023 15:16:22.969 [16696:2884:0503/151622.968:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 1.
+5월 03, 2023 15:16:22.970 [16696:2884:0503/151622.969:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 2.
+5월 03, 2023 15:16:22.970 [16696:2884:0503/151622.969:ERROR:usb_descriptors.cc(100)] Failed to read all configuration descriptors. Expected 3, got 1.
+5월 03, 2023 15:16:22.971 [16696:2884:0503/151622.969:ERROR:device_event_log_impl.cc(222)] [15:16:22.969] USB: usb_device_win.cc:95 Failed to read descriptors from \\?\usb#vid_0bda&pid_8156#401000001#{a5dcbf10-6530-11d2-901f-00c04fb951ed}.
+5월 03, 2023 15:16:22.971 [16696:2884:0503/151622.969:ERROR:device_event_log_impl.cc(222)] [15:16:22.969] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+5월 03, 2023 15:16:22.971 [16696:2884:0503/151622.971:ERROR:device_event_log_impl.cc(222)] [15:16:22.971] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+5월 03, 2023 15:16:22.971 [16696:2884:0503/151622.971:ERROR:device_event_log_impl.cc(222)] [15:16:22.971] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+5월 03, 2023 15:16:23.910 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+5월 03, 2023 15:21:15.81 [16696:18004:0503/152115.080:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+5월 03, 2023 15:24:30.554 [16696:2884:0503/152430.554:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:30.874 [16696:2884:0503/152430.874:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:30.999 [16696:2884:0503/152430.998:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:31.102 [16696:2884:0503/152431.101:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:31.234 [16696:2884:0503/152431.234:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:31.343 [16696:2884:0503/152431.342:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:31.444 [16696:2884:0503/152431.443:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:31.551 [16696:2884:0503/152431.550:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:31.660 [16696:2884:0503/152431.660:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:31.779 [16696:2884:0503/152431.778:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:31.905 [16696:2884:0503/152431.905:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:32.42 [16696:2884:0503/152432.041:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:32.156 [16696:2884:0503/152432.155:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:32.260 [16696:2884:0503/152432.259:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:32.376 [16696:2884:0503/152432.376:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:32.486 [16696:2884:0503/152432.485:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:32.593 [16696:2884:0503/152432.592:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:32.707 [16696:2884:0503/152432.707:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:32.810 [16696:2884:0503/152432.809:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:32.915 [16696:2884:0503/152432.914:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:33.30 [16696:2884:0503/152433.029:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:33.249 [16696:2884:0503/152433.248:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:33.361 [16696:2884:0503/152433.361:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:33.480 [16696:2884:0503/152433.479:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:33.610 [16696:2884:0503/152433.610:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:33.729 [16696:2884:0503/152433.729:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:33.962 [16696:2884:0503/152433.962:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:34.81 [16696:2884:0503/152434.081:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:34.195 [16696:2884:0503/152434.195:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:34.327 [16696:2884:0503/152434.327:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:34.462 [16696:2884:0503/152434.462:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:34.587 [16696:2884:0503/152434.586:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:34.698 [16696:2884:0503/152434.697:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:34.814 [16696:2884:0503/152434.813:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:34.932 [16696:2884:0503/152434.931:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:35.55 [16696:2884:0503/152435.054:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:35.164 [16696:2884:0503/152435.163:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:35.315 [16696:2884:0503/152435.314:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:35.431 [16696:2884:0503/152435.430:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:35.545 [16696:2884:0503/152435.544:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:35.730 [16696:2884:0503/152435.728:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:35.846 [16696:2884:0503/152435.846:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:35.995 [16696:2884:0503/152435.994:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:36.465 [16696:2884:0503/152436.464:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:36.581 [16696:2884:0503/152436.580:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:36.711 [16696:2884:0503/152436.710:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:36.820 [16696:2884:0503/152436.819:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:37.179 [16696:2884:0503/152437.178:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:37.354 [16696:2884:0503/152437.353:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:37.815 [16696:2884:0503/152437.814:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:37.962 [16696:2884:0503/152437.962:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:38.163 [16696:2884:0503/152438.162:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:38.362 [16696:2884:0503/152438.362:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:38.613 [16696:2884:0503/152438.612:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:38.833 [16696:2884:0503/152438.833:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:48.43 [16696:2884:0503/152448.043:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:48.160 [16696:2884:0503/152448.158:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:48.292 [16696:2884:0503/152448.291:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:48.410 [16696:2884:0503/152448.409:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:48.543 [16696:2884:0503/152448.542:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:48.709 [16696:2884:0503/152448.708:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:48.840 [16696:2884:0503/152448.840:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:48.958 [16696:2884:0503/152448.958:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:49.75 [16696:2884:0503/152449.074:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:49.407 [16696:2884:0503/152449.407:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:49.538 [16696:2884:0503/152449.538:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:49.674 [16696:2884:0503/152449.673:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:49.976 [16696:2884:0503/152449.976:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:50.93 [16696:2884:0503/152450.092:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:50.210 [16696:2884:0503/152450.209:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:50.327 [16696:2884:0503/152450.326:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:50.744 [16696:2884:0503/152450.743:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:50.859 [16696:2884:0503/152450.859:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:50.976 [16696:2884:0503/152450.976:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:51.93 [16696:2884:0503/152451.093:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:51.210 [16696:2884:0503/152451.209:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:51.323 [16696:2884:0503/152451.322:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:51.893 [16696:2884:0503/152451.893:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:52.12 [16696:2884:0503/152452.011:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:52.124 [16696:2884:0503/152452.123:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:52.243 [16696:2884:0503/152452.242:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:52.410 [16696:2884:0503/152452.410:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:52.534 [16696:2884:0503/152452.534:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:52.641 [16696:2884:0503/152452.641:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:52.775 [16696:2884:0503/152452.774:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:53.432 [16696:2884:0503/152453.431:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:53.549 [16696:2884:0503/152453.548:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:53.663 [16696:2884:0503/152453.663:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:53.783 [16696:2884:0503/152453.782:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:54.93 [16696:2884:0503/152454.092:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:54.209 [16696:2884:0503/152454.209:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:54.344 [16696:2884:0503/152454.343:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:54.459 [16696:2884:0503/152454.459:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:54.641 [16696:2884:0503/152454.640:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:54.810 [16696:2884:0503/152454.809:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:55.128 [16696:2884:0503/152455.127:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:55.525 [16696:2884:0503/152455.524:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:55.676 [16696:2884:0503/152455.675:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:55.879 [16696:2884:0503/152455.878:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:24:57.732 [16696:2884:0503/152457.731:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.791 s for first_image_paint 0.779 s
+5월 03, 2023 15:29:04.419 [16696:2884:0503/152904.418:ERROR:device_event_log_impl.cc(222)] [15:29:04.418] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+5월 03, 2023 15:40:16.843 [16696:18004:0503/154016.843:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+5월 03, 2023 15:41:18.51 [16696:2884:0503/154118.050:ERROR:device_event_log_impl.cc(222)] [15:41:18.050] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+5월 03, 2023 15:41:18.54 [16696:2884:0503/154118.054:ERROR:device_event_log_impl.cc(222)] [15:41:18.054] USB: usb_service_win.cc:307 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)
+5월 03, 2023 15:42:03.376 [16696:18004:0503/154203.376:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+5월 03, 2023 15:42:04.617 [16696:18004:0503/154204.617:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+5월 03, 2023 15:42:52.338 [16696:2884:0503/154252.338:ERROR:device_event_log_impl.cc(222)] [15:42:52.338] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+5월 03, 2023 15:42:52.342 [16696:2884:0503/154252.341:ERROR:device_event_log_impl.cc(222)] [15:42:52.341] USB: usb_service_win.cc:307 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)
+
+5월 04, 2023 17:16:49.542 NEW SESSION
+5월 04, 2023 17:16:49.542 [9308:11196:0504/171649.537:ERROR:device_event_log_impl.cc(222)] [17:16:49.536] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+5월 04, 2023 17:16:49.544 [9308:11196:0504/171649.537:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 1.
+5월 04, 2023 17:16:49.544 [9308:11196:0504/171649.537:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 2.
+5월 04, 2023 17:16:49.544 [9308:11196:0504/171649.537:ERROR:usb_descriptors.cc(100)] Failed to read all configuration descriptors. Expected 3, got 1.
+5월 04, 2023 17:16:49.544 [9308:11196:0504/171649.537:ERROR:device_event_log_impl.cc(222)] [17:16:49.537] USB: usb_device_win.cc:95 Failed to read descriptors from \\?\usb#vid_0bda&pid_8156#401000001#{a5dcbf10-6530-11d2-901f-00c04fb951ed}.
+5월 04, 2023 17:16:49.545 [9308:11196:0504/171649.537:ERROR:device_event_log_impl.cc(222)] [17:16:49.537] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+5월 04, 2023 17:16:49.545 [9308:11196:0504/171649.540:ERROR:device_event_log_impl.cc(222)] [17:16:49.539] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+5월 04, 2023 17:16:49.545 [9308:11196:0504/171649.540:ERROR:device_event_log_impl.cc(222)] [17:16:49.539] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+5월 04, 2023 17:16:49.985 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+5월 10, 2023 09:06:05.588 NEW SESSION
+5월 10, 2023 09:06:05.588 [19040:17900:0510/090605.585:ERROR:device_event_log_impl.cc(222)] [09:06:05.586] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+5월 10, 2023 09:06:05.590 [19040:17900:0510/090605.589:ERROR:device_event_log_impl.cc(222)] [09:06:05.590] USB: usb_service_win.cc:307 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)
+5월 10, 2023 10:17:50.763 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 10, 2023 11:33:41.163 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 10, 2023 12:18:26.981 [19040:17900:0510/121826.981:ERROR:interface_endpoint_client.cc(696)] Message 0 rejected by interface blink.mojom.WidgetHost
+5월 10, 2023 12:20:29.474 [19040:17900:0510/122029.473:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:29.576 [19040:17900:0510/122029.575:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:29.685 [19040:17900:0510/122029.684:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:29.784 [19040:17900:0510/122029.784:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:29.886 [19040:17900:0510/122029.885:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:29.988 [19040:17900:0510/122029.988:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:30.91 [19040:17900:0510/122030.091:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:30.201 [19040:17900:0510/122030.200:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:30.448 [19040:17900:0510/122030.448:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:30.743 [19040:17900:0510/122030.743:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:31.258 [19040:17900:0510/122031.258:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:31.391 [19040:17900:0510/122031.390:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:31.508 [19040:17900:0510/122031.508:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:31.614 [19040:17900:0510/122031.613:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:31.725 [19040:17900:0510/122031.725:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:31.846 [19040:17900:0510/122031.846:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:31.958 [19040:17900:0510/122031.957:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:32.74 [19040:17900:0510/122032.073:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:32.191 [19040:17900:0510/122032.191:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:32.376 [19040:17900:0510/122032.375:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:32.644 [19040:17900:0510/122032.643:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:34.740 [19040:17900:0510/122034.739:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:34.841 [19040:17900:0510/122034.840:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:34.958 [19040:17900:0510/122034.957:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:35.61 [19040:17900:0510/122035.059:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:35.177 [19040:17900:0510/122035.176:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:35.295 [19040:17900:0510/122035.294:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:35.398 [19040:17900:0510/122035.397:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:35.508 [19040:17900:0510/122035.508:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:35.625 [19040:17900:0510/122035.625:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:35.776 [19040:17900:0510/122035.776:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:35.922 [19040:17900:0510/122035.921:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:36.27 [19040:17900:0510/122036.027:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:36.700 [19040:17900:0510/122036.699:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:36.811 [19040:17900:0510/122036.811:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:36.925 [19040:17900:0510/122036.924:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:37.41 [19040:17900:0510/122037.040:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:37.159 [19040:17900:0510/122037.158:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:37.274 [19040:17900:0510/122037.273:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:37.393 [19040:17900:0510/122037.392:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:37.518 [19040:17900:0510/122037.517:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:40.142 [19040:17900:0510/122040.141:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:40.787 [19040:17900:0510/122040.787:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:40.904 [19040:17900:0510/122040.904:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 12:20:41.06 [19040:17900:0510/122041.005:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 1.568 s for first_image_paint 1.553 s
+5월 10, 2023 14:48:53.90 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 10, 2023 14:49:26.885 [19040:17900:0510/144926.884:ERROR:device_event_log_impl.cc(222)] [14:49:26.884] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+5월 10, 2023 14:49:26.888 [19040:17900:0510/144926.888:ERROR:device_event_log_impl.cc(222)] [14:49:26.887] USB: usb_service_win.cc:307 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)
+
+5월 13, 2023 18:06:11.760 NEW SESSION
+5월 13, 2023 18:06:11.760 [19164:19152:0513/180611.755:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 1.
+5월 13, 2023 18:06:11.771 [19164:19152:0513/180611.755:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 2.
+5월 13, 2023 18:06:11.771 [19164:19152:0513/180611.755:ERROR:usb_descriptors.cc(100)] Failed to read all configuration descriptors. Expected 3, got 1.
+5월 13, 2023 18:06:11.771 [19164:19152:0513/180611.755:ERROR:device_event_log_impl.cc(222)] [18:06:11.756] USB: usb_device_win.cc:95 Failed to read descriptors from \\?\usb#vid_0bda&pid_8156#401000001#{a5dcbf10-6530-11d2-901f-00c04fb951ed}.
+5월 13, 2023 18:09:23.866 [25344:5932:0513/180923.865:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 1.
+5월 13, 2023 18:09:23.868 [25344:5932:0513/180923.865:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 2.
+5월 13, 2023 18:09:23.868 [25344:5932:0513/180923.865:ERROR:usb_descriptors.cc(100)] Failed to read all configuration descriptors. Expected 3, got 1.
+5월 13, 2023 18:09:23.868 [25344:5932:0513/180923.865:ERROR:device_event_log_impl.cc(222)] [18:09:23.865] USB: usb_device_win.cc:95 Failed to read descriptors from \\?\usb#vid_0bda&pid_8156#401000001#{a5dcbf10-6530-11d2-901f-00c04fb951ed}.
+5월 13, 2023 19:13:14.631 [25344:2912:0513/191314.627:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+5월 13, 2023 19:13:15.38 [25344:5932:0513/191315.037:ERROR:device_event_log_impl.cc(222)] [19:13:14.925] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+5월 13, 2023 19:13:41.381 [27476:27480:0513/191341.380:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 1.
+5월 13, 2023 19:13:41.381 [27476:27480:0513/191341.380:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 2.
+5월 13, 2023 19:13:41.382 [27476:27480:0513/191341.380:ERROR:usb_descriptors.cc(100)] Failed to read all configuration descriptors. Expected 3, got 1.
+5월 13, 2023 19:13:41.383 [27476:27480:0513/191341.380:ERROR:device_event_log_impl.cc(222)] [19:13:41.381] USB: usb_device_win.cc:95 Failed to read descriptors from \\?\usb#vid_0bda&pid_8156#401000001#{a5dcbf10-6530-11d2-901f-00c04fb951ed}.
+5월 13, 2023 19:15:11.134 [3664:24352:0513/191511.133:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 1.
+5월 13, 2023 19:15:11.135 [3664:24352:0513/191511.133:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 2.
+5월 13, 2023 19:15:11.135 [3664:24352:0513/191511.133:ERROR:usb_descriptors.cc(100)] Failed to read all configuration descriptors. Expected 3, got 1.
+5월 13, 2023 19:15:11.135 [3664:24352:0513/191511.134:ERROR:device_event_log_impl.cc(222)] [19:15:11.133] USB: usb_device_win.cc:95 Failed to read descriptors from \\?\usb#vid_0bda&pid_8156#401000001#{a5dcbf10-6530-11d2-901f-00c04fb951ed}.
+5월 13, 2023 20:20:13.35 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 13, 2023 21:20:01.858 [3664:26828:0513/212001.857:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+5월 13, 2023 21:26:48.971 [3664:24352:0513/212648.970:ERROR:device_event_log_impl.cc(222)] [21:26:48.970] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+5월 13, 2023 21:43:15.587 [3664:26828:0513/214315.587:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+5월 13, 2023 21:43:15.953 [3664:26876:0513/214315.952:ERROR:get_updates_processor.cc(264)] PostClientToServerMessage() failed during GetUpdates with error 2
+5월 13, 2023 22:10:26.41 [3664:26828:0513/221026.040:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+5월 13, 2023 22:23:13.06 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 13, 2023 22:28:12.236 [3664:24352:0513/222812.235:ERROR:interface_endpoint_client.cc(696)] Message 0 rejected by interface blink.mojom.WidgetHost
+5월 14, 2023 08:03:41.907 [3664:26828:0514/080341.906:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+5월 14, 2023 08:03:42.04 [3664:26880:0514/080342.004:ERROR:get_updates_processor.cc(264)] PostClientToServerMessage() failed during GetUpdates with error 2
+5월 14, 2023 08:03:46.568 [3664:26828:0514/080346.568:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+5월 14, 2023 12:07:24.220 [3664:26828:0514/120724.220:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+5월 14, 2023 12:07:24.731 [3664:26828:0514/120724.731:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+5월 14, 2023 12:07:24.737 [3664:20500:0514/120724.737:ERROR:get_updates_processor.cc(264)] PostClientToServerMessage() failed during GetUpdates with error 2
+5월 14, 2023 12:07:30.573 [3664:26828:0514/120730.573:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+5월 14, 2023 12:07:30.575 [3664:26880:0514/120730.575:ERROR:get_updates_processor.cc(264)] PostClientToServerMessage() failed during GetUpdates with error 2
+5월 14, 2023 12:07:43.346 [3664:26828:0514/120743.345:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+5월 14, 2023 12:07:43.348 [3664:26880:0514/120743.348:ERROR:get_updates_processor.cc(264)] PostClientToServerMessage() failed during GetUpdates with error 2
+5월 14, 2023 12:07:46.811 [3664:26828:0514/120746.810:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+5월 14, 2023 12:07:48.841 [3664:26828:0514/120748.840:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+5월 14, 2023 12:11:35.223 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:28:19.247 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:30:34.560 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:34:47.243 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:34:48.817 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:34:50.340 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:35:01.488 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:35:13.322 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:35:17.115 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:35:19.484 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:35:21.201 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:35:22.436 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:35:24.991 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:35:25.912 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:35:27.138 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:35:40.926 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:38:46.168 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:39:36.53 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:39:54.597 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:42:12.494 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:43:36.889 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:43:51.738 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:44:43.03 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:45:00.144 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:45:34.964 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:45:49.423 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:46:42.882 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:47:02.584 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:47:08.972 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:48:10.959 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:48:57.778 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:49:31.568 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:50:07.228 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:50:24.302 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:52:50.897 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:53:20.197 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:54:17.306 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:55:32.828 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:56:20.914 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 12:57:11.762 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+5월 14, 2023 16:26:23.291 [3664:26828:0514/134228.497:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+5월 14, 2023 16:26:36.90 [3664:24352:0514/162636.089:ERROR:command_buffer_proxy_impl.cc(325)] GPU state invalid after WaitForGetOffsetInRange.
+5월 14, 2023 16:26:36.90 [3664:24352:0514/162636.089:ERROR:command_buffer_proxy_impl.cc(325)] GPU state invalid after WaitForGetOffsetInRange.

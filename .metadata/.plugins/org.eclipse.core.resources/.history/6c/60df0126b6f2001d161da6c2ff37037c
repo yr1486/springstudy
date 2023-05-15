@@ -1,0 +1,14 @@
+package com.gdu.app12.mapper;
+
+import java.util.List;
+import java.util.Map;
+
+import org.apache.ibatis.annotations.Mapper;
+
+import com.gdu.app11.domain.AttachDTO;
+import com.gdu.app11.domain.UploadDTO;
+
+@Mapper
+public interface UserMapper {
+	
+}
