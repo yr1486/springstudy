@@ -21,12 +21,13 @@ public class UserDTO {
   private String birthyear;
   private String birthdate;
   private String postcode;
-  private String roadAdress;
+  private String roadAddress;
   private String jibunAddress;
   private String detailAddress;
-  private int agreeCode;
-  private Date joinedAt; 
+  private String extraAddress;
+  private int agreecode;
+  private Date joinedAt;
   private Date pwModifiedAt;
   private String autologinId;
-  private String autologinExpiredAt;
+  private Date autologinExpiredAt;
 }

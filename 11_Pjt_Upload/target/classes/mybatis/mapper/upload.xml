@@ -31,11 +31,7 @@
               FROM UPLOAD U) B
      WHERE B.RN BETWEEN #{begin} AND #{end}
   </select>
-	
-	<!-- 오늘처음보는 태그, 
-		insert하기전에, selectkey가 먼저 돌고,
-		uploadDTO객체의 업로드시퀀스값을 넣게 되는 거임 
-	-->
+
   <insert id="addUpload" parameterType="UploadDTO">
     <!-- INSERT 수행 이전(BEFORE)에 addUpload 서비스가 전달한 UploadDTO의 uploadNo필드에 UPLOAD_SEQ.NEXTVAL값을 저장한다. -->
     <selectKey order="BEFORE" resultType="int" keyProperty="uploadNo">
@@ -76,13 +72,13 @@
       , #{uploadNo}
     )
   </insert>
-	
+
   <select id="getUploadByNo" parameterType="int" resultType="UploadDTO">
     SELECT UPLOAD_NO, UPLOAD_TITLE, UPLOAD_CONTENT, CREATED_AT, MODIFIED_AT
       FROM UPLOAD
      WHERE UPLOAD_NO = #{uploadNo}
   </select>
-	
+
   <select id="getAttachList" parameterType="int" resultType="AttachDTO">
     SELECT ATTACH_NO, PATH, ORIGIN_NAME, FILESYSTEM_NAME, DOWNLOAD_COUNT, HAS_THUMBNAIL, UPLOAD_NO
       FROM ATTACH
@@ -94,8 +90,7 @@
       FROM ATTACH
      WHERE ATTACH_NO = #{attachNo}
   </select>
-	<!-- 개별 첨부 정보가 필요하다. -->
-	
+
   <update id="increaseDownloadCount" parameterType="int">
     UPDATE ATTACH
        SET DOWNLOAD_COUNT = DOWNLOAD_COUNT + 1
@@ -115,22 +110,17 @@
          , MODIFIED_AT = SYSTIMESTAMP
      WHERE UPLOAD_NO = #{uploadNo}
   </update>
-  
- <delete id="removeAttach" parameterType="int">
+
+  <delete id="removeAttach" parameterType="int">
     DELETE
       FROM ATTACH
      WHERE ATTACH_NO = #{attachNo}
   </delete>
-  
-	<!-- 받아오는게 없지만, 돌려줄건 있어. -->
+
   <select id="getAttachListInYesterday" resultType="AttachDTO">
     SELECT ATTACH_NO, PATH, ORIGIN_NAME, FILESYSTEM_NAME, DOWNLOAD_COUNT, HAS_THUMBNAIL, UPLOAD_NO
       FROM ATTACH
      WHERE PATH LIKE CONCAT('%', TO_CHAR(SYSDATE - 1, 'YYYY\\MM\\DD'))
   </select>
-	<!-- 날짜만 같으면 되는걸로 -->
-	
-	
-	
-	
+
 </mapper>

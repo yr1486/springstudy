@@ -404,3 +404,25 @@
 5월 14, 2023 16:26:23.291 [3664:26828:0514/134228.497:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
 5월 14, 2023 16:26:36.90 [3664:24352:0514/162636.089:ERROR:command_buffer_proxy_impl.cc(325)] GPU state invalid after WaitForGetOffsetInRange.
 5월 14, 2023 16:26:36.90 [3664:24352:0514/162636.089:ERROR:command_buffer_proxy_impl.cc(325)] GPU state invalid after WaitForGetOffsetInRange.
+
+5월 17, 2023 09:48:05.386 NEW SESSION
+5월 17, 2023 09:48:05.386 [7296:11676:0517/094805.384:ERROR:native_message_process_host.cc(348)] Error when writing to Native Messaging host: -101
+5월 17, 2023 09:48:06.405 [7296:11676:0517/094806.405:ERROR:native_message_process_host.cc(348)] Error when writing to Native Messaging host: -101
+5월 17, 2023 09:48:07.665 [7296:15256:0517/094807.665:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 1.
+5월 17, 2023 09:48:07.666 [7296:15256:0517/094807.665:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 2.
+5월 17, 2023 09:48:07.666 [7296:15256:0517/094807.665:ERROR:usb_descriptors.cc(100)] Failed to read all configuration descriptors. Expected 3, got 1.
+5월 17, 2023 09:48:07.666 [7296:15256:0517/094807.665:ERROR:device_event_log_impl.cc(222)] [09:48:07.666] USB: usb_device_win.cc:95 Failed to read descriptors from \\?\usb#vid_0bda&pid_8156#401000001#{a5dcbf10-6530-11d2-901f-00c04fb951ed}.
+5월 17, 2023 12:45:08.962 [7296:15256:0517/124508.960:ERROR:device_event_log_impl.cc(222)] [12:45:08.960] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+5월 17, 2023 12:45:08.965 [7296:15256:0517/124508.965:ERROR:device_event_log_impl.cc(222)] [12:45:08.964] USB: usb_service_win.cc:307 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)
+5월 17, 2023 12:48:44.465 [7296:11676:0517/124844.465:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+5월 17, 2023 13:51:40.651 [7296:11676:0517/135140.650:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+5월 17, 2023 13:53:25.14 [7296:11676:0517/135325.013:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+5월 17, 2023 13:55:03.484 [7296:15256:0517/135503.483:ERROR:device_event_log_impl.cc(222)] [13:55:03.483] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+5월 17, 2023 13:55:03.491 [7296:15256:0517/135503.491:ERROR:device_event_log_impl.cc(222)] [13:55:03.491] USB: usb_service_win.cc:307 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)
+5월 17, 2023 13:55:59.771 [7296:15256:0517/135559.771:ERROR:device_event_log_impl.cc(222)] [13:55:59.771] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+5월 17, 2023 13:55:59.780 [7296:15256:0517/135559.779:ERROR:device_event_log_impl.cc(222)] [13:55:59.779] USB: usb_service_win.cc:307 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)
+5월 17, 2023 13:56:20.25 [7296:15256:0517/135620.025:ERROR:device_event_log_impl.cc(222)] [13:56:20.024] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+5월 17, 2023 13:56:20.34 [7296:15256:0517/135620.033:ERROR:device_event_log_impl.cc(222)] [13:56:20.033] USB: usb_service_win.cc:307 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)
+5월 17, 2023 13:56:36.493 [7296:15256:0517/135636.492:ERROR:device_event_log_impl.cc(222)] [13:56:36.491] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+5월 17, 2023 13:56:36.503 [7296:15256:0517/135636.502:ERROR:device_event_log_impl.cc(222)] [13:56:36.502] USB: usb_service_win.cc:307 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)
+5월 17, 2023 15:29:56.833 [7296:11676:0517/152956.832:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105

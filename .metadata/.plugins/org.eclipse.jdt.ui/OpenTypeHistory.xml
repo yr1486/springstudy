@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-    <typeInfo handle="=Semi/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.gdu.semi.service{CsService.java[CsService" modifiers="513" timestamp="1683917758705"/>
+    <typeInfo handle="=12_Pjt_User/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.gdu.app12.service{UserService.java[UserService" modifiers="513" timestamp="1684290958814"/>
+    <typeInfo handle="=12_Pjt_User/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.gdu.app12.mapper{UserMapper.java[UserMapper" modifiers="513" timestamp="1684290906972"/>
 </typeInfoHistroy>

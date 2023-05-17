@@ -1,0 +1,143 @@
+-- 업로드 게시물 테이블
+DROP TABLE ATTACH;
+CREATE TABLE ATTACH (
+    ATTACH_NO       NUMBER NOT NULL,              
+    PATH            VARCHAR2(300 BYTE) NOT NULL,  
+    ORIGIN_NAME     VARCHAR2(300 BYTE) NOT NULL,  
+    FILESYSTEM_NAME VARCHAR2(50 BYTE) NOT NULL,   
+    DOWNLOAD_COUNT  NUMBER,                       
+    HAS_THUMBNAIL   NUMBER,                       
+    CS_NO           NUMBER                        
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- CS QNA 게시판 -- OK
+-- 비회원 안할건데, 비밀번호 글 구현을 할수 있는지 마는지.
+-- CSQNA_PW            VARCHAR2(4 BYTE), -- 제거
+-- 계층 게시판 
+DROP TABLE CSQNA;
+-- 답변이 달리면 , 이메일전송  코드 :  EMAIL               VARCHAR2(100 BYTE), -- USER의 이메일 필요
+CREATE TABLE CSQNA (
+    CSQNA_NO            NUMBER NOT NULL, -- 게시글번호
+    ID                  VARCHAR2(40 BYTE), -- USER의 ID
+    EMAIL               VARCHAR2(100 BYTE),
+    CSQNA_CATEGORY      VARCHAR2(100 BYTE) NOT NULL, -- QNA 카테고리 : 결제문의, 포인트문의, 일반문의 등
+    CSQNA_TITLE         VARCHAR2(1000 BYTE) NOT NULL, -- 제목
+    CSQNA_CONTENT       CLOB, -- 내용
+    CSQNA_CREATED_AT    TIMESTAMP, -- 작성일자                    
+    CSQNA_MODIFIED_AT   TIMESTAMP, -- 수정일자
+    CSQNA_SECRET        VARCHAR2(10 BYTE), -- 비밀글 생년월일 끌어와서 쓸거임
+    IP                  VARCHAR2(30 BYTE) NOT NULL,
+    STATE               NUMBER(1) NOT NULL,           /* 정상:1, 삭제:0 */
+    DEPTH               NUMBER(2) NOT NULL,           /* 원글:0, 1차댓글:1, 2차댓글:2, ... */
+    GROUP_NO            NUMBER NOT NULL,            /* 원글과 모든 댓글은 같은 GROUP_NO, 원글:BBS_NO, 댓글:원글의 BBS_NO */
+    GROUP_ORDER         NUMBER NOT NULL         /* 동일 그룹 내 표시 순서 */
+);
+
+
+
+
+
+
+-- CS FAQ 게시판 --
+DROP TABLE CSFAQ;
+CREATE TABLE CSFAQ ( 
+    CSFAQ_NO          NUMBER NOT NULL,
+    CSFAQ_CATEGORY    VARCHAR2(100 BYTE) NOT NULL,
+    CSFAQ_TITLE       VARCHAR2(1000 BYTE) NOT NULL,
+    CSFAQ_WRITER      VARCHAR2(30 BYTE) NOT NULL,
+    CSFAQ_CONTENT     CLOB, -- 내용
+    CSFAQ_CREATED_AT  TIMESTAMP, -- 작성일자   
+    CSFAQ_HIT         NUMBER NOT NULL
+);
+
+
+
+-- CS NOTICE 게시판 --
+DROP TABLE CSNOTICE;
+CREATE TABLE CSNOTICE ( 
+    CSNOTICE_NO          NUMBER NOT NULL,
+    CSNOTICE_CATEGORY    VARCHAR2(100 BYTE) NOT NULL,
+    CSNOTICE_TITLE       VARCHAR2(1000 BYTE) NOT NULL,
+    CSNOTICE_WRITER      VARCHAR2(30 BYTE) NOT NULL,
+    CSNOTICE_CONTENT     CLOB,
+    CSNOTICE_CREATED_AT  TIMESTAMP,
+    CSNOTICE_HIT         NUMBER NOT NULL
+);
+
+
+-- 기본키
+ALTER TABLE ATTACH
+    ADD CONSTRAINT PK_ATTACH
+           PRIMARY KEY(ATTACH_NO);
+           
+ALTER TABLE CSQNA
+    ADD CONSTRAINT PK_CSQNA
+           PRIMARY KEY(CSQNA_NO);
+           
+ALTER TABLE CSFAQ
+    ADD CONSTRAINT PK_CSFAQ
+           PRIMARY KEY(CSFAQ_NO);
+
+ALTER TABLE CSNOTICE
+    ADD CONSTRAINT PK_CSNOTICE
+           PRIMARY KEY(CSNOTICE_NO);
+               
+-- 외래키
+ALTER TABLE ATTACH
+    ADD CONSTRAINT FK_ATTACH_CSQNA
+           FOREIGN KEY(CSQNA_NO) REFERENCES CSQNA(CSQNA_NO)
+            ON DELETE CASCADE;
+
+
+ALTER TABLE CSQNA
+    ADD CONSTRAINT FK_USER_T_ID
+           FOREIGN KEY(USER_T_ID) REFERENCES USER_T(ID)
+            ON DELETE CASCADE;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- 시퀀스
+DROP SEQUENCE ATTACH_SEQ;
+CREATE SEQUENCE ATTACH_SEQ NOCACHE;
+
+DROP SEQUENCE CSQNA_SEQ;
+CREATE SEQUENCE CSQNA_SEQ NOCACHE;
+
+DROP SEQUENCE CSFAQ_SEQ;
+CREATE SEQUENCE CSFAQ_SEQ NOCACHE;
+
+DROP SEQUENCE CSNOTICE_SEQ;
+CREATE SEQUENCE CSNOTICE_SEQ NOCACHE;
+
+
+
+
+
+
