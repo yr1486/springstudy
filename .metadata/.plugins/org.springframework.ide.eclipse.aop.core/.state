@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
+<aop-project name="MooVOD"/>
 <aop-project name="Semi2"/>
 <aop-project name="12_Pjt_User">
 <aspect-definition advice-class-name="com.gdu.app12.aspect.ConfirmLoginAspect" advice-method-name="requiredLoginHandler(org.aspectj.lang.JoinPoint)" advice-type="BEFORE" aspect-end-line-number="24" aspect-name="confirmLoginAspect" aspect-start-line-number="24" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/12_Pjt_User/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" pointcut-expression="requiredLogin()" proxy-target-class="false">
-<aop-reference advice-type="BEFORE" bean="1:BeansModel|2:12_Pjt_User|3:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml|7:beans:beans:8|8:userController:8" bean-file="/12_Pjt_User/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" bean-start-line="8" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/12_Pjt_User/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" source="=12_Pjt_User/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.gdu.app12.aspect{ConfirmLoginAspect.java[ConfirmLoginAspect~requiredLoginHandler~QJoinPoint;" source-start-line="30" target="=12_Pjt_User/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.gdu.app12.controller{UserController.java[UserController~requiredLogin_logout~QHttpServletRequest;~QHttpServletResponse;" target-start-line="81"/>
-<aop-reference advice-type="BEFORE" bean="1:BeansModel|2:12_Pjt_User|3:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml|7:beans:beans:8|8:userController:8" bean-file="/12_Pjt_User/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" bean-start-line="8" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/12_Pjt_User/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" source="=12_Pjt_User/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.gdu.app12.aspect{ConfirmLoginAspect.java[ConfirmLoginAspect~requiredLoginHandler~QJoinPoint;" source-start-line="30" target="=12_Pjt_User/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.gdu.app12.controller{UserController.java[UserController~requiredLogin_leave~QHttpServletRequest;~QHttpServletResponse;" target-start-line="88"/>
+<aop-reference advice-type="BEFORE" bean="1:BeansModel|2:12_Pjt_User|3:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml|7:beans:beans:8|8:userController:8" bean-file="/12_Pjt_User/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" bean-start-line="8" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/12_Pjt_User/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" source="=12_Pjt_User/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.gdu.app12.aspect{ConfirmLoginAspect.java[ConfirmLoginAspect~requiredLoginHandler~QJoinPoint;" source-start-line="32" target="=12_Pjt_User/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.gdu.app12.controller{UserController.java[UserController~requiredLogin_logout~QHttpServletRequest;~QHttpServletResponse;" target-start-line="82"/>
+<aop-reference advice-type="BEFORE" bean="1:BeansModel|2:12_Pjt_User|3:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml|7:beans:beans:8|8:userController:8" bean-file="/12_Pjt_User/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" bean-start-line="8" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/12_Pjt_User/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" source="=12_Pjt_User/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.gdu.app12.aspect{ConfirmLoginAspect.java[ConfirmLoginAspect~requiredLoginHandler~QJoinPoint;" source-start-line="32" target="=12_Pjt_User/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.gdu.app12.controller{UserController.java[UserController~requiredLogin_leave~QHttpServletRequest;~QHttpServletResponse;" target-start-line="89"/>
 </aspect-definition>
 </aop-project>
-<aop-project name="Semi"/>
 <aop-project name="09_Pjt_List"/>
-<aop-project name="staff2"/>
 <aop-project name="04_Jdbc_JUnit"/>
 <aop-project name="03_Ajax"/>
 <aop-project name="10_Pjt_Hierarchy"/>
@@ -19,5 +18,4 @@
 <aop-project name="08_Mybatis_Batch"/>
 <aop-project name="06_SpringJdbc_Aop"/>
 <aop-project name="11_Pjt_Upload"/>
-<aop-project name="staff"/>
 </aop-reference-model>
