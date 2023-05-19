@@ -90,7 +90,7 @@ public class BoardServiceImpl implements BoardService {
 		board.setBoardNo(boardNo);
 		
 		int modifyResult = boardMapper.updateBoard(board);
-	
+		
 		try {
 			
 			response.setContentType("text/html; charset=UTF-8");
@@ -178,18 +178,9 @@ public class BoardServiceImpl implements BoardService {
 	
 	@Override
 	public void getBoardCount() {
-		// 게시글이 몇개다.
 		int boardCount = boardMapper.selectBoardCount();
 		String msg = "[" + LocalDateTime.now().toString() + "] 게시글 갯수는 " + boardCount + "개입니다.";
 		System.out.println(msg);
 	}
-		
-	
-	
-	
-	
-	
-	
-	
 	
 }

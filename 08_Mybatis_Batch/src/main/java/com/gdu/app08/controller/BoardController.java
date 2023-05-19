@@ -49,37 +49,36 @@ public class BoardController {
 		return "board/detail";
 	}
 	
-	@GetMapping("/write.do")
-	public String write() {
-		return "board/write";
-	}
+  @GetMapping("/write.do")
+  public String write() {
+    return "board/write";
+  }
+  // addBoard() 서비스 내부에 location.href를 이용한 /board/list.do 이동이 있기 때문에 응답할 View를 반환하지 않는다.
+  @PostMapping("/add.do")
+  public void add(HttpServletRequest request, HttpServletResponse response) {
+    boardService.addBoard(request, response);
+  }
 	
-	// addBoard() 서비스 내부에 location.href를 이용한 /board/list.do 이동이 있기 떄문에 응답할 View를 반환하지 않는다.
-	@PostMapping("/add.do")
-	public void add(HttpServletRequest request, HttpServletResponse response) {
-		boardService.addBoard(request, response); //리퀘스트전달.
-	}
-	
-	
-	// addBoard() 서비스 내부에 location.href를 이용한 /board/list.do 이동이 있기 떄문에 응답할 View를 반환하지 않는다.
-	@PostMapping("/modify.do")
-	public void modify(HttpServletRequest request, HttpServletResponse response) {
-		boardService.modifyBoard(request, response); 
-	}
+  // modifyBoard() 서비스 내부에 location.href를 이용한 /board/detail.do 이동이 있기 때문에 응답할 View를 반환하지 않는다.
+  @PostMapping("/modify.do")
+  public void modify(HttpServletRequest request, HttpServletResponse response) {
+    boardService.modifyBoard(request, response);
+  }
 	
 	
-	// removeBoard() 서비스 내부에 location.href를 이용한 /board/list.do 이동이 있기 떄문에 응답할 View를 반환하지 않는다.
-	@PostMapping("/remove.do")
-	public void remove(HttpServletRequest request, HttpServletResponse response) {
-		boardService.removeBoard(request, response); //리퀘스트전달.
+  // removeBoard() 서비스 내부에 location.href를 이용한 /board/list.do 이동이 있기 때문에 응답할 View를 반환하지 않는다.
+  @PostMapping("/remove.do")
+  public void remove(HttpServletRequest request, HttpServletResponse response) {
+    boardService.removeBoard(request, response);//리퀘스트전달.
 		//return "redirect:/board/detail.do";
 		// 상세보기 요청을 하고 싶으면. 보드넘버값을 전달해줘야함. 몇번게시글이 보고싶은지.
 	}
 	
-	@PostMapping("/removeList.do")
-	public void removeList(HttpServletRequest request, HttpServletResponse response) {
-			boardService.removeBoard(request, response);
-		}
+  // removeList() 서비스 내부에 location.href를 이용한 /board/list.do 이동이 있기 때문에 응답할 View를 반환하지 않는다.
+  @PostMapping("/removeList.do")
+  public void removeList(HttpServletRequest request, HttpServletResponse response) {
+    boardService.removeBoardList(request, response);
+  }
 	
 	
 	
