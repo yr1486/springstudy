@@ -535,3 +535,19 @@
 5월 21, 2023 09:56:41.423 [27136:26456:0521/095641.423:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
 5월 21, 2023 09:56:42.941 [27136:26456:0521/095642.941:ERROR:native_message_process_host.cc(348)] Error when writing to Native Messaging host: -101
 5월 21, 2023 09:56:43.894 [27136:26456:0521/095643.893:ERROR:native_message_process_host.cc(348)] Error when writing to Native Messaging host: -101
+5월 21, 2023 11:46:58.183 [26864:8492:0521/114658.182:ERROR:native_message_process_host.cc(348)] Error when writing to Native Messaging host: -101
+5월 21, 2023 11:46:59.237 [26864:8492:0521/114659.237:ERROR:native_message_process_host.cc(348)] Error when writing to Native Messaging host: -101
+5월 21, 2023 11:47:01.78 [26864:14828:0521/114701.077:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 1.
+5월 21, 2023 11:47:01.78 [26864:14828:0521/114701.077:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 2.
+5월 21, 2023 11:47:01.78 [26864:14828:0521/114701.078:ERROR:usb_descriptors.cc(100)] Failed to read all configuration descriptors. Expected 3, got 1.
+5월 21, 2023 11:47:01.79 [26864:14828:0521/114701.078:ERROR:device_event_log_impl.cc(222)] [11:47:01.078] USB: usb_device_win.cc:95 Failed to read descriptors from \\?\usb#vid_0bda&pid_8156#401000001#{a5dcbf10-6530-11d2-901f-00c04fb951ed}.
+5월 21, 2023 11:50:17.300 [26864:8492:0521/115017.300:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+5월 21, 2023 13:00:11.638 [26864:8492:0521/130011.638:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+5월 21, 2023 13:00:56.484 [26864:14828:0521/130056.484:ERROR:device_event_log_impl.cc(222)] [13:00:56.484] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+5월 21, 2023 21:48:37.355 [28080:32816:0521/214837.354:ERROR:native_message_process_host.cc(348)] Error when writing to Native Messaging host: -101
+5월 21, 2023 21:48:38.410 [28080:32816:0521/214838.410:ERROR:native_message_process_host.cc(348)] Error when writing to Native Messaging host: -101
+5월 21, 2023 21:48:40.177 [28080:13964:0521/214840.177:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 1.
+5월 21, 2023 21:48:40.177 [28080:13964:0521/214840.177:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 2.
+5월 21, 2023 21:48:40.177 [28080:13964:0521/214840.177:ERROR:usb_descriptors.cc(100)] Failed to read all configuration descriptors. Expected 3, got 1.
+5월 21, 2023 21:48:40.177 [28080:13964:0521/214840.177:ERROR:device_event_log_impl.cc(222)] [21:48:40.176] USB: usb_device_win.cc:95 Failed to read descriptors from \\?\usb#vid_0bda&pid_8156#401000001#{a5dcbf10-6530-11d2-901f-00c04fb951ed}.
+5월 21, 2023 22:05:36.866 [28080:32816:0521/220536.866:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
