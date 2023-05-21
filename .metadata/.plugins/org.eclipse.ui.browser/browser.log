@@ -505,3 +505,33 @@
 5월 19, 2023 20:37:24.678 [32408:14320:0519/203724.677:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 2.
 5월 19, 2023 20:37:24.678 [32408:14320:0519/203724.677:ERROR:usb_descriptors.cc(100)] Failed to read all configuration descriptors. Expected 3, got 1.
 5월 19, 2023 20:37:24.678 [32408:14320:0519/203724.677:ERROR:device_event_log_impl.cc(222)] [20:37:24.676] USB: usb_device_win.cc:95 Failed to read descriptors from \\?\usb#vid_0bda&pid_8156#401000001#{a5dcbf10-6530-11d2-901f-00c04fb951ed}.
+5월 19, 2023 22:02:24.448 [32408:12220:0519/220224.448:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+5월 20, 2023 15:21:12.942 [32408:12220:0520/152112.825:ERROR:checkin_request.cc(243)] Check-in request got net error: -331
+5월 20, 2023 15:21:12.954 [32408:12220:0520/152112.847:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+5월 20, 2023 15:21:12.958 [32408:13520:0520/152112.852:ERROR:get_updates_processor.cc(264)] PostClientToServerMessage() failed during GetUpdates with error 2
+5월 20, 2023 15:21:14.475 [32408:14320:0520/152114.475:ERROR:service_worker_task_queue.cc(234)] DidStartWorkerFail efaidnbmnnnibpcajpcglclefindmkaj: 14
+5월 20, 2023 15:21:15.374 [32408:12220:0520/152115.374:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+
+5월 20, 2023 15:39:14.616 NEW SESSION
+5월 20, 2023 15:39:14.616 [30412:22436:0520/153914.613:ERROR:native_message_process_host.cc(348)] Error when writing to Native Messaging host: -101
+5월 20, 2023 15:39:15.619 [30412:22436:0520/153915.617:ERROR:native_message_process_host.cc(348)] Error when writing to Native Messaging host: -101
+5월 20, 2023 15:39:16.754 [30412:12964:0520/153916.753:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 1.
+5월 20, 2023 15:39:16.754 [30412:12964:0520/153916.753:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 2.
+5월 20, 2023 15:39:16.754 [30412:12964:0520/153916.753:ERROR:usb_descriptors.cc(100)] Failed to read all configuration descriptors. Expected 3, got 1.
+5월 20, 2023 15:39:16.755 [30412:12964:0520/153916.753:ERROR:device_event_log_impl.cc(222)] [15:39:16.753] USB: usb_device_win.cc:95 Failed to read descriptors from \\?\usb#vid_0bda&pid_8156#401000001#{a5dcbf10-6530-11d2-901f-00c04fb951ed}.
+5월 20, 2023 15:52:36.565 [30412:12964:0520/155236.565:ERROR:device_event_log_impl.cc(222)] [15:52:36.565] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+5월 20, 2023 16:22:46.430 [27136:26456:0520/162246.429:ERROR:native_message_process_host.cc(348)] Error when writing to Native Messaging host: -101
+5월 20, 2023 16:22:47.450 [27136:26456:0520/162247.450:ERROR:native_message_process_host.cc(348)] Error when writing to Native Messaging host: -101
+5월 20, 2023 16:22:48.632 [27136:33384:0520/162248.629:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 1.
+5월 20, 2023 16:22:48.632 [27136:33384:0520/162248.629:ERROR:usb_descriptors.cc(141)] Failed to read length for configuration 2.
+5월 20, 2023 16:22:48.633 [27136:33384:0520/162248.629:ERROR:usb_descriptors.cc(100)] Failed to read all configuration descriptors. Expected 3, got 1.
+5월 20, 2023 16:22:48.633 [27136:33384:0520/162248.629:ERROR:device_event_log_impl.cc(222)] [16:22:48.629] USB: usb_device_win.cc:95 Failed to read descriptors from \\?\usb#vid_0bda&pid_8156#401000001#{a5dcbf10-6530-11d2-901f-00c04fb951ed}.
+5월 20, 2023 16:37:51.605 [27136:26456:0520/163751.605:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+5월 20, 2023 16:48:36.79 [27136:26456:0520/164836.079:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+5월 20, 2023 16:54:13.559 [27136:26456:0520/165413.558:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -7
+5월 20, 2023 17:02:11.948 [27136:33384:0520/170211.948:ERROR:device_event_log_impl.cc(222)] [17:02:11.949] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+5월 20, 2023 17:07:23.913 [27136:26456:0520/170723.913:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+5월 20, 2023 18:08:13.370 [27136:26456:0520/180813.369:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+5월 21, 2023 09:56:41.423 [27136:26456:0521/095641.423:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+5월 21, 2023 09:56:42.941 [27136:26456:0521/095642.941:ERROR:native_message_process_host.cc(348)] Error when writing to Native Messaging host: -101
+5월 21, 2023 09:56:43.894 [27136:26456:0521/095643.893:ERROR:native_message_process_host.cc(348)] Error when writing to Native Messaging host: -101

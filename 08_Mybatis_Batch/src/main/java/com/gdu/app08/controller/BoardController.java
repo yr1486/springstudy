@@ -31,7 +31,7 @@ public class BoardController {
 	 */
 	
 	//첫번쨰로 보여질게 리스트.do
-	// /board는 위에 애가 가져가서 안적어줘도 되는거
+	// /board는 위에 리퀘스트맵핑이 가져가서 안적어줘도 되는거
 	@GetMapping("/list.do") // == /board/list.do
 	// 목록보기라 하는것은 getBoardList() 서비스가 반환한 List<BoardDTO>(=어레이리스트라고함) 를 board/에 list.jsp로 전달한다.(=전달한다는 forward하는거고. 포워드할 데이터는 모델에 저장한다)
 	public String list(Model model) { //jsp가보면은 붙은 파라미터가없어서 ()

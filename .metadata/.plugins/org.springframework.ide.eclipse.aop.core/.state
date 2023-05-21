@@ -10,6 +10,7 @@
 </aop-project>
 <aop-project name="09_Pjt_List"/>
 <aop-project name="04_Jdbc_JUnit"/>
+<aop-project name="MooVOD2"/>
 <aop-project name="03_Ajax"/>
 <aop-project name="10_Pjt_Hierarchy"/>
 <aop-project name="07_Mybatis_MockMvc"/>
