@@ -73,9 +73,10 @@
 
 </script>
 <style>
-	.blind {
-		display: none;
-	}
+
+.blind {
+	display: none;
+}
 </style>
 </head>
 <body>
@@ -96,7 +97,7 @@
 					<td>제목</td>
 					<td>IP</td>
 					<td>작성일자</td>
-					<td></td>
+					
 				</tr>
 			</thead>
 			<tbody>
@@ -159,6 +160,6 @@
 		</table>
 	</div>
 	
-</body>
+</body>`
 </html>
 

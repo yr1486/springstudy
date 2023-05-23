@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class BbsDTO {
+  
 	private int bbsNo;
 	private String writer;
 	private String title;

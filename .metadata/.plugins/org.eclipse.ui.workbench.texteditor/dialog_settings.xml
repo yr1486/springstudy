@@ -6,19 +6,35 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="thum"/>
+		<item key="selection" value="QNA"/>
 		<list key="findhistory">
+			<item value="NOTICE"/>
+			<item value="notice"/>
+			<item value="bbs"/>
+			<item value="BBS"/>
+			<item value="Qna"/>
+			<item value="qna"/>
+			<item value="board"/>
+			<item value="Board"/>
+			<item value="BoardDTO"/>
 			<item value="thum"/>
 			<item value="sample4_"/>
 			<item value="#{order}"/>
 		</list>
 		<list key="replacehistory">
+			<item value="QNA"/>
+			<item value="qna"/>
+			<item value="Faq"/>
+			<item value="Notice"/>
+			<item value="faq"/>
+			<item value="Qna"/>
+			<item value="QnaDTO"/>
 			<item value=""/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="52"/>
-		<item key="DIALOG_Y_ORIGIN" value="220"/>
+		<item key="DIALOG_X_ORIGIN" value="628"/>
+		<item key="DIALOG_Y_ORIGIN" value="359"/>
 		<item key="DIALOG_WIDTH" value="340"/>
 		<item key="DIALOG_HEIGHT" value="454"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
