@@ -4,10 +4,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 public interface MemberService {
-  
-  // user = member
-  
   public void login(HttpServletRequest request);
   public void logout(HttpSession session);
-
 }

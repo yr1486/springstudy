@@ -18,7 +18,6 @@ public class MemberServiceImpl implements MemberService {
   @Autowired
   private MemberMapper memberMapper;
   
-  
   @Override
   public void login(HttpServletRequest request) {
     String id = request.getParameter("id");
@@ -30,34 +29,13 @@ public class MemberServiceImpl implements MemberService {
     if(memberDTO != null) {
       HttpSession session = request.getSession();
       session.setAttribute("loginId", id);
+      session.setAttribute("loginNo", memberDTO.getMemberNo());
     }
-    
   }
 
   @Override
   public void logout(HttpSession session) {
-    session.invalidate(); // 다 지운다.
+    session.invalidate();
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

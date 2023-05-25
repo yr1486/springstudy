@@ -10,6 +10,10 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script src="${contextPath}/resources/js/lib/jquery-3.6.4.min.js"></script>
+<script src="${contextPath}/resources/home/js/scripts.js"></script>
+<script src="${contextPath}/resources/summernote-0.8.18-dist/summernote-lite.min.js"></script>
+<script src="${contextPath}/resources/summernote-0.8.18-dist/lang/summernote-ko-KR.js"></script>
+<link rel="stylesheet" href="${contextPath}/resources/summernote-0.8.18-dist/summernote-lite.min.css">
 <script>
 
   function fnInit(){

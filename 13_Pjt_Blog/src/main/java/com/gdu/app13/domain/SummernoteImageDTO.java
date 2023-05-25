@@ -9,6 +9,5 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class SummernoteImageDTO {
   private String filesystemName;
-  private BlogDTO blogNo;
-
+  private int blogNo;
 }

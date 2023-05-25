@@ -21,7 +21,7 @@ public class MemberController {
   @PostMapping("/login.do")
   public String login(HttpServletRequest request) {
     memberService.login(request);
-    return "index"; // 로 돌아가자.
+    return "index";
   }
   
   @GetMapping("/logout.do")
@@ -29,27 +29,5 @@ public class MemberController {
     memberService.logout(session);
     return "index";
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
 }

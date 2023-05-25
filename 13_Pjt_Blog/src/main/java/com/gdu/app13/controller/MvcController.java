@@ -6,9 +6,16 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class MvcController {
 
-	@GetMapping(value={"/", "/index.do"}) // 회원가입하고, 첫페이지로 이동시켜주는거
+	@GetMapping("/")
 	public String welcome() {
 		return "index";
 	}
+	
+	/*
+	@GetMapping("/header.do")
+	public String header() {
+	  return "layout/header";
+	}
+	*/
 	
 }

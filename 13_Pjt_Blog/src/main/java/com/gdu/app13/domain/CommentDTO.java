@@ -10,7 +10,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class CommentDTO {
-
   private int commentNo;
   private String content;
   private int state;
@@ -19,5 +18,4 @@ public class CommentDTO {
   private Date createdAt;
   private int blogNo;
   private MemberDTO memberDTO;
-  
 }

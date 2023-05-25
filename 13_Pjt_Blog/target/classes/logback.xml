@@ -21,7 +21,7 @@
   <logger name="jdbc"                level="OFF" />
   <logger name="jdbc.sqlonly"        level="INFO" />  <!-- SQL 출력 -->
   <logger name="jdbc.resultsettable" level="INFO" />  <!-- SELECT 결과를 테이블로 출력 -->
-
+  
   <!-- Root Logger -->
   <root>
     <appender-ref ref="console" />

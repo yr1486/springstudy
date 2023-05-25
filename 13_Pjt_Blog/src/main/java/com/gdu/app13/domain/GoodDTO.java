@@ -10,10 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class GoodDTO {
-
-  private int memberNo; // 좋아요에는 상세보기가 없어.
+  private int memberNo;
   private int blogNo;
   private Date markedAt;
-
-
 }
