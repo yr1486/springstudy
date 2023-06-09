@@ -117,6 +117,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\SemiProject\MooVOD"/>
 			<item value="C:\GDJ61\springstudy\movie"/>
 			<item value="C:\SemiProject"/>
 			<item value="C:\GDJ61\springstudy\10_Pjt_Hierarchy"/>

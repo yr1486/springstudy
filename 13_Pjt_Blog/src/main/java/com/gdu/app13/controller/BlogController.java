@@ -6,7 +6,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Required;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -47,8 +46,8 @@ public class BlogController {
     return blogService.imageUpload(multipartRequest);
   }
   
-  @GetMapping("/increaseHit.do")
-  public String increaseHit(@RequestParam(value="blogNo", required=false, defaultValue="0") int blogNo) {
+  @GetMapping("/increseHit.do")
+  public String increseHit(@RequestParam(value="blogNo", required=false, defaultValue="0") int blogNo) {
     int increaseResult = blogService.increaseHit(blogNo);
     if(increaseResult == 1) {
       return "redirect:/blog/detail.do?blogNo=" + blogNo;
@@ -63,29 +62,11 @@ public class BlogController {
     blogService.loadBlog(blogNo, model);
     return "blog/detail";
   }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-  }
   
   
   
   
   
   
-
+  
+}

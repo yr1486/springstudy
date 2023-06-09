@@ -37,12 +37,12 @@
             <td>${beginNo - vs.index}</td>
             <td>
               <!-- 내가 작성한 블로그는 조회수가 증가하지 않는다. -->
-              <c:if test="${sessionScope.loginId eq blog.memberDTO.id}"><!-- 작성자는 눌러도 조회수에 포함되지 않게. -->
-                 <a href="${contextPath}/blog/increaseHit.do?blogNo=${blog.blogNo}">${blog.title}</a>
-              </c:if> 
-              <c:if test="${sessionScope.loginId  blog.memberDTO.id}"><!-- 작성자가 아니면 조회수 포함이 되게 -->
-                 <a href="${contextPath}/blog/increaseHit.do?blogNo=${blog.blogNo}">${blog.title}</a>
-              </c:if> 
+              <c:if test="${sessionScope.loginId eq blog.memberDTO.id}">
+                <a href="${contextPath}/blog/detail.do?blogNo=${blog.blogNo}">${blog.title}</a>
+              </c:if>
+              <c:if test="${sessionScope.loginId ne blog.memberDTO.id}">
+                <a href="${contextPath}/blog/increseHit.do?blogNo=${blog.blogNo}">${blog.title}</a>
+              </c:if>
             </td>
             <td>${blog.hit}</td>
             <td>${blog.memberDTO.id}</td>
@@ -57,7 +57,7 @@
 
 <script>
   function fnWrite(){
-    location.href = '${contextPath}/blog/write.form';
+	  location.href = '${contextPath}/blog/write.form';
   }
 </script>
 

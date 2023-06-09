@@ -166,18 +166,16 @@ public class BlogServiceImpl implements BlogService {
     
   }
   
-  
   @Override
   public int increaseHit(int blogNo) {
-   
-    return blogMapper.increaseHit(blogNo);
+    return blogMapper.increseHit(blogNo);
   }
   
   @Override
   public void loadBlog(int blogNo, Model model) {
     model.addAttribute("blog", blogMapper.getBlogByNo(blogNo));
-    
   }
+  
   
   
   

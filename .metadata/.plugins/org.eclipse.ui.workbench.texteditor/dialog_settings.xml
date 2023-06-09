@@ -6,8 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="id"/>
+		<item key="selection" value="NOTICE"/>
 		<list key="findhistory">
+			<item value="FAQ"/>
+			<item value="VOD"/>
 			<item value="writer"/>
 			<item value="searchallmovies"/>
 			<item value="searchallmovie"/>
@@ -21,10 +23,9 @@
 			<item value="Board"/>
 			<item value="BoardDTO"/>
 			<item value="thum"/>
-			<item value="sample4_"/>
-			<item value="#{order}"/>
 		</list>
 		<list key="replacehistory">
+			<item value="NOTICE"/>
 			<item value="id"/>
 			<item value="QNA"/>
 			<item value="qna"/>
@@ -37,7 +38,7 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="665"/>
+		<item key="DIALOG_X_ORIGIN" value="628"/>
 		<item key="DIALOG_Y_ORIGIN" value="289"/>
 		<item key="DIALOG_WIDTH" value="340"/>
 		<item key="DIALOG_HEIGHT" value="454"/>
